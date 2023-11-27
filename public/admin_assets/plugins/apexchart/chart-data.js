@@ -293,5 +293,156 @@ $(document).ready(function() {
     
     }
 
+    if($('#chart-stunting-daerah').length > 0 ){
+      
+      var columnCtx = document.getElementById("chart-stunting-daerah"),
+    	columnConfig = {
+    		colors: ['#4169E1'],
+    		series: [
+    			{
+    			name: "Jumlah Balita Stanting",
+    			type: "column",
+    			data: [
+            45, 72, 18, 92, 35, 60, 10, 88, 50, 25,
+            80, 15, 68, 42, 77, 33, 95, 22, 55, 5,
+            90, 40, 75, 28, 63, 12, 85, 58, 30, 65
+          ]
+    			}
+    		],
+    		chart: {
+    			type: 'bar',
+    			fontFamily: 'Poppins, sans-serif',
+    			height: 350,
+    			toolbar: {
+    				show: false
+    			}
+    		},
+    		plotOptions: {
+    			bar: {
+    				horizontal: false,
+    				columnWidth: '60%',
+    				endingShape: 'rounded'
+    			},
+    		},
+    		dataLabels: {
+    			enabled: false
+    		},
+    		stroke: {
+    			show: true,
+    			width: 2,
+    			colors: ['transparent']
+    		},
+    		xaxis: {
+    			categories: [
+            "Andir",
+            "Antapani",
+            "Arcamanik",
+            "Astana Anyar",
+            "Babakan Ciparay",
+            "Bandung Kidul",
+            "Bandung Kulon",
+            "Bandung Wetan",
+            "Batununggal",
+            "Bojongloa Kaler",
+            "Bojongloa Kidul",
+            "Buahbatu",
+            "Cibeunying Kaler",
+            "Cibeunying Kidul",
+            "Cibiru",
+            "Cicendo",
+            "Cidadap",
+            "Cinambo",
+            "Coblong",
+            "Gedebage",
+            "Kiaracondong",
+            "Lengkong",
+            "Mandalajati",
+            "Panyileukan",
+            "Rancasari",
+            "Regol",
+            "Sukajadi",
+            "Sukasari",
+            "Sumur Bandung",
+            "Ujung Berung"
+          ],
+    		},
+    		yaxis: {
+    			title: {
+    				text: 'Jumlah Balita Stunting'
+    			}
+    		},
+    		fill: {
+    			opacity: 1
+    		},
+    		tooltip: {
+    			y: {
+    				formatter: function (val) {
+    					return val + " balita"
+    				}
+    			}
+    		}
+    	};
+    	var columnChart = new ApexCharts(columnCtx, columnConfig);
+    	columnChart.render();
+    }
+
+    if($('#chart-stunting-tahun').length > 0 ){
+      
+      var columnCtx = document.getElementById("chart-stunting-tahun"),
+    	columnConfig = {
+    		colors: ['#4169E1'],
+    		series: [
+    			{
+    			name: "Jumlah Balita Stanting",
+    			type: "column",
+    			data: [371989, 324665, 336139, 263972, 224525, 226436, 276069, 206514, 180042]
+    			}
+    		],
+    		chart: {
+    			type: 'bar',
+    			fontFamily: 'Poppins, sans-serif',
+    			height: 350,
+    			toolbar: {
+    				show: false
+    			}
+    		},
+    		plotOptions: {
+    			bar: {
+    				horizontal: false,
+    				columnWidth: '60%',
+    				endingShape: 'rounded'
+    			},
+    		},
+    		dataLabels: {
+    			enabled: false
+    		},
+    		stroke: {
+    			show: true,
+    			width: 2,
+    			colors: ['transparent']
+    		},
+    		xaxis: {
+    			categories: ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+    		},
+    		yaxis: {
+    			title: {
+    				text: 'Jumlah Balita Stunting'
+    			}
+    		},
+    		fill: {
+    			opacity: 1
+    		},
+    		tooltip: {
+    			y: {
+    				formatter: function (val) {
+    					return val + " balita"
+    				}
+    			}
+    		}
+    	};
+    	var columnChart = new ApexCharts(columnCtx, columnConfig);
+    	columnChart.render();
+    }
+
     
 });

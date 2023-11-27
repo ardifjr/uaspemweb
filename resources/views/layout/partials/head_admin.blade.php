@@ -1,9 +1,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-<title>Truelysell | Template</title>
+<title>DPPKB</title>
 
 <!-- Favicons -->
-<link rel="shortcut icon" href="{{ url('admin_assets/img/favicon.png') }}">
+<link rel="shortcut icon" type="image/x-icon" href="{{url('assets/img/dppkb/logo_bdg.png')}}">
 
 <!-- Select 2 -->
 <link rel="stylesheet" href="{{ url('/admin_assets/css/select2.min.css') }}">

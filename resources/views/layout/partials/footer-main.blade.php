@@ -1,6 +1,7 @@
 <!-- Footer -->
-<footer class="footer">
-		
+
+<footer class="footer p-3">
+@if(!isset($showNavbar) || $showNavbar !== false)
     <!-- Footer Top -->
     <div class="footer-top">
         <div class="container">
@@ -9,33 +10,10 @@
                     <!-- Footer Widget -->
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="{{url('/')}}"><img src="{{ URL::asset('/assets/img/logo.svg')}}" alt="logo"></a>
+                            <a href="{{url('/')}}"><img src="{{ URL::asset('/assets/img/dppkb/logo.png')}}" alt="logo"></a>
                         </div>
                         <div class="footer-content">
                             <p>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor   commodo consequat. </p>
-                        </div>
-                        <div class="footer-selects">
-                            <h2 class="footer-title">Language & Currency</h2>
-                            <div class="row">
-                                <div class="col-lg-12 d-flex">
-                                    <div class="footer-select">
-                                        <img src="{{ URL::asset('/assets/img/icons/global.svg')}}" alt="img">
-                                        <select class="select">
-                                            <option>English</option>
-                                            <option>France</option>
-                                            <option>Spanish</option>
-                                        </select>
-                                    </div>
-                                    <div class="footer-select">
-                                        <img src="{{ URL::asset('/assets/img/icons/dropdown.svg')}}" class="footer-dropdown" alt="img">
-                                        <select class="select">
-                                            <option>US Dollars</option>
-                                            <option>INR</option>
-                                            <option>Kuwait</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <!-- /Footer Widget -->
@@ -49,16 +27,10 @@
                                 <a href="{{url('about-us')}}">About Us</a>
                             </li>
                             <li>
-                                <a href="{{url('blog-grid')}}">Blogs</a>
+                                <a href="{{url('/list-berita')}}">Berita</a>
                             </li>
                             <li>
-                                <a href="{{url('contact-us')}}">Contact Us</a>
-                            </li>
-                            <li>
-                                <a href="{{url('provider-signup')}}">Become a Professional</a>
-                            </li>
-                            <li>
-                                <a href="{{url('user-signup')}}">Become a User</a>
+                                <a href="{{url('contact-us')}}">Kontak</a>
                             </li>
                         </ul>
                     </div>
@@ -85,25 +57,15 @@
                         <div class="social-icon">
                             <ul>
                                 <li>
-                                    <a href="javascript:;" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+                                    <a href="https://www.facebook.com/dppkb.bandung/" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:;" target="_blank"><i class="fab fa-twitter"></i> </a>
+                                    <a href="javascript:void(0);"><i class="fab fa-twitter"></i> </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:;" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/dppkb.bandung/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                                 </li>
                             </ul>
-                        </div>
-                        <h2 class="footer-subtitle">Newsletter Signup</h2>
-                        <div class="subscribe-form">
-                            <input type="email" class="form-control" placeholder="Enter Email Address">
-                            <button type="submit" class="btn footer-btn">
-                                <i class="feather-send"></i>
-                            </button>
                         </div>
                     </div>
                     <!-- /Footer Widget -->
@@ -121,27 +83,10 @@
                 <div class="row align-items-center">
                     <div class="col-md-4">
                         <div class="copyright-text">
-                            <p class="mb-0">Copyright &copy; <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.</p>
+                            <p class="mb-0">Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="payment-image">
-                            <ul>
-                                <li>
-                                    <a href="javascript:;"><img src="{{ URL::asset('/assets/img/payment/visa.png')}}" alt="img"></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;"><img src="{{ URL::asset('/assets/img/payment/mastercard.png')}}" alt="img"></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;"><img src="{{ URL::asset('/assets/img/payment/stripe.png')}}" alt="img"></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;"><img src="{{ URL::asset('/assets/img/payment/discover.png')}}" alt="img"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <!-- Copyright Menu -->
                         <div class="copyright-menu">
@@ -162,6 +107,6 @@
         </div>
     </div>
     <!-- /Footer Bottom -->
-    
+    @endif
 </footer>
 <!-- /Footer -->

@@ -1,16 +1,4 @@
-<?php error_reporting(0);?>
-@if(Route::is(['index-2']))
-<div class="top-bar">
-    <h6>50% OFF on Christmas</h6>
-    <ul>
-        <li>2</li>
-        <li>15</li>
-        <li>33</li>
-        <li>32</li>
-    </ul>
-    <a href="javascript:;" class="top-close"><i class="feather-x"></i></a>
-</div>
-@endif
+<?php error_reporting(0);?> 
 @if(Route::is(['index-9']))
 <div class="top-bar-nine">
     <div class="container">

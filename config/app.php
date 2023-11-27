@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Facade;
 
 return [
+    'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -69,7 +70,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Jakarta',
 
     /*
     |--------------------------------------------------------------------------
@@ -185,6 +186,8 @@ return [
         /*
          * Package Service Providers...
          */
+        Kreait\Laravel\Firebase\ServiceProvider::class,
+        RealRashid\SweetAlert\SweetAlertServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -209,7 +212,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // 'ExampleClass' => App\Example\ExampleClass::class,
+        'Firebase' => Kreait\Laravel\Firebase\Facades\Firebase::class,
     ])->toArray(),
 
 ];

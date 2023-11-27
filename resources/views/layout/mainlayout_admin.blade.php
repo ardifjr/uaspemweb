@@ -6,6 +6,7 @@
 </head>
 
 <body>
+    @include('sweetalert::alert')
     <div class="main-wrapper">
         @if (
             !Route::is([
@@ -39,7 +40,7 @@
     @endif
 
     @include('layout.partials.footer_admin-script')
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

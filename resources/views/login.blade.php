@@ -1,80 +1,74 @@
 <?php $page = 'login'; ?>
+<?php $showNavbar = false; ?>
 @extends('layout.mainlayout')
 @section('content')
-    <div class="content">
+    <style scoped>
+        .content {
+            height: 100vh;
+            display: flex;
+            align-items: center
+        }
+    </style>
+    <div class="content p-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-6 mx-auto">
-                    <div class="login-wrap">
-                        <div class="login-header">
-                            <h3>Login</h3>
-                            <p>We'll send a confirmation code to your email.</p>
-                            <h6>Sign in with <a href="{{ url('login-phone') }}">Phone Number</a></h6>
-                        </div>
-
-                        <!-- Login Form -->
-                        <form action="customer-dashboard">
-                            <div class="log-form">
-                                <div class="form-group">
-                                    <label class="col-form-label">E-mail</label>
-                                    <input type="text" class="form-control" placeholder="example@email.com">
+            <div class="row gap-5 justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-5">
+                    <img class="img-fluid" src="{{ URL::asset('/admin_assets/img/login-banner.png') }}" alt="img">
+                </div>
+                <div class="col-lg-4 col-md-7">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4 text-primary">Login</h3>
+                            <form action="{{ url('auth/login') }}" method="POST">
+                                @csrf
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" id="username" name="username" class="form-control"
+                                        placeholder="Enter your username">
+                                    @error('username')
+                                        <div class="text-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                <div class="form-group">
-                                    <label class="col-form-label d-block">Password</label>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
                                     <div class="pass-group">
-                                        <input type="password" class="form-control pass-input" placeholder="*************">
-                                        <span class="toggle-password feather-eye"></span>
+                                        <input type="password" id="password" name="password" class="form-control"
+                                            placeholder="Enter your password">
+                                        <span onclick="togglePassword()" class="toggle-password feather-eye"></span>
                                     </div>
+                                    @error('password')
+                                        <div class="text-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="char-length">
-                                            <p>Must be 6 characters at least</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="text-md-end">
-                                            <a class="forgot-link" href="{{ url('password-recovery') }}">Forgot
-                                                password?</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <label class="custom_check">
-                                            <input type="checkbox" name="rememberme" class="rememberme">
-                                            <span class="checkmark"></span>Remember Me
-                                        </label>
-                                    </div>
-                                    <div class="col-6 text-end">
-                                        <label class="custom_check">
-                                            <input type="checkbox" name="loginotp" class="loginotp">
-                                            <span class="checkmark"></span>Login with OTP
-                                        </label>
-                                    </div>
-                                </div>
+                                @if (session()->has('login-error'))
+                                    <div class="text-danger mb-3">{{ session('login-error') }}</div>
+                                @endif
+                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                            </form>
+                            <div class="col-12 col-lg-12 mx-auto mt-2">
+                                <a href="{{ url('/') }}" class="btn btn-secondary w-100">Back</a>
                             </div>
-                            <button class="btn btn-primary w-100 login-btn" type="submit">Login</button>
-                            <div class="login-or">
-                                <span class="or-line"></span>
-                                <span class="span-or">Or, Login with your email</span>
-                            </div>
-                            <div class="social-login">
-                                <a href="javascript:;" class="btn btn-google w-100"><img
-                                        src="{{ URL::asset('/assets/img/icons/google.svg') }}" class="me-2"
-                                        alt="img">Login with Google</a>
-                                <a href="javascript:;" class="btn btn-google w-100"><img
-                                        src="{{ URL::asset('/assets/img/icons/fb.svg') }}" class="me-2"
-                                        alt="img">Login with Facebook</a>
-                            </div>
-                            <p class="no-acc">Don't have an account ? <a href="{{ url('choose-signup') }}">Register</a></p>
-                        </form>
-                        <!-- /Login Form -->
-
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            var eyeIcon = document.querySelector(".toggle-password");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.classList.remove("feather-eye");
+                eyeIcon.classList.add("feather-eye-off"); // You may need to change this class based on your styling
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.classList.add("feather-eye"); // You may need to change this class based on your styling
+                eyeIcon.classList.remove("feather-eye-off");
+            }
+        }
+    </script>
 @endsection

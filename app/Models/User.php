@@ -11,16 +11,18 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
-
+    public function scopeFilter($query, array $filters){
+        $query->when($filters['search'] ?? false ,function($query, $search){
+           return $query->where('full_name','like','%'. $search.'%');
+        });
+   }
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
+    protected $guarded = [
+      'id'
     ];
 
     /**
