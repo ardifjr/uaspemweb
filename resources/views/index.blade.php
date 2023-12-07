@@ -5,7 +5,7 @@
     <section class="hero-section-two">
         <div class="banner-slider slider">
             <div class="banner">
-                    <img class="img-fluid" src="/assets/img/dppkb/itenaspanjang.png" alt="img"
+                    <img class="img-fluid" src="/assets/img/dppkb/samplebanner.png" alt="img"
                         style="width: 100%; object-fit: cover; height: 706px;">
                 </div>
             <!-- @foreach ($carousels as $carousel)
