@@ -4,6 +4,7 @@
         <div class="filter-head">
             <h5>Filter by</h5>
             <a href="javascript:;" class="reset-link">Reset Filters</a>
+            
         </div>
         <div class="filter-content">
             <h2>Keyword</h2>
