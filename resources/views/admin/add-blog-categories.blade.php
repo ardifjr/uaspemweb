@@ -1,4 +1,5 @@
 <?php $page = 'add-blog-categories'; ?>
+
 @extends('layout.mainlayout_admin')
 @section('content')
     <div class="page-wrapper">
