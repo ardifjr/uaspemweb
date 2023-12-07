@@ -10,10 +10,10 @@
                     <!-- Footer Widget -->
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="{{url('/')}}"><img src="{{ URL::asset('/assets/img/dppkb/logo.png')}}" alt="logo"></a>
+                            <a href="{{url('/')}}"><img src="{{ URL::asset('/assets/img/dppkb/itenaspanjang.png')}}" alt="logo"></a>
                         </div>
                         <div class="footer-content">
-                            <p>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor   commodo consequat. </p>
+                            <p>Institut Teknologi Nasional, adalah universitas swasta berorientasi teknologi yang berlokasi di Bandung, Indonesia.</p>
                         </div>
                     </div>
                     <!-- /Footer Widget -->
@@ -27,10 +27,10 @@
                                 <a href="{{url('about-us')}}">About Us</a>
                             </li>
                             <li>
-                                <a href="{{url('/list-berita')}}">Berita</a>
+                                <a href="{{ url('/galeri') }}">Galeri</a>
                             </li>
                             <li>
-                                <a href="{{url('contact-us')}}">Kontak</a>
+                                <a href="{{ url('https://pmb.itenas.ac.id') }}">PMB Itenas</a>
                             </li>
                         </ul>
                     </div>
@@ -42,10 +42,10 @@
                         <h2 class="footer-title">Contact Us</h2>
                         <div class="footer-contact-info">
                             <div class="footer-address">
-                                <p><span><i class="feather-map-pin"></i></span> 367 Hillcrest Lane, Irvine, California, United States</p>
+                                <p><span><i class="feather-map-pin"></i></span> Jl. PH.H. Mustofa No.23 Bandung 40124</p>
                             </div>
-                            <p><span><i class="feather-phone"></i></span> 321 546 8764</p>
-                            <p class="mb-0"><span><i class="feather-mail"></i></span> truelysell@example.com</p>
+                            <p><span><i class="feather-phone"></i></span> Phone: +62 22 7272215, Fax +62 22 7202892</p>
+                            <p class="mb-0"><span><i class="feather-mail"></i></span> humas@itenas.ac.id</p>
                         </div>
                     </div>
                     <!-- /Footer Widget -->
@@ -57,13 +57,13 @@
                         <div class="social-icon">
                             <ul>
                                 <li>
-                                    <a href="https://www.facebook.com/dppkb.bandung/" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+                                    <a href="https://www.facebook.com/itenas.official/" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);"><i class="fab fa-twitter"></i> </a>
+                                    <a href="https://twitter.com/itenas_official" target="_blank"><i class="fab fa-twitter"></i> </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/dppkb.bandung/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/itenas.official/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                                 </li>
                             </ul>
                         </div>
