@@ -3,8 +3,7 @@
     <div class="top-bar">
         <marquee>
             <h6>
-                Dinas Pengendalian Penduduk dan Keluarga Berencana (DPPKB) | Situs Resmi - Pemerintah Daerah Kota
-                Bandung.
+                Sistem Informasi Institut Teknologi Nasioanl Bandung
             </h6>
         </marquee>
         <a href="javascript:;" class="top-close"><i class="feather-x"></i></a>
@@ -22,10 +21,10 @@
                         </span>
                     </a>
                     <a href="{{ url('/') }}" class="navbar-brand logo">
-                        <img src="{{ URL::asset('/assets/img/dppkb/logo.png') }}" class="img-fluid" alt="Logo">
+                        <img src="{{ URL::asset('/assets/img/dppkb/itenaspanjang.png') }}" class="img-fluid" alt="Logo">
                     </a>
                     <a href="{{ url('/') }}" class="navbar-brand logo-small">
-                        <img src="{{ URL::asset('/assets/img/dppkb/logo.png') }}" class="img-fluid" alt="Logo">
+                        <img src="{{ URL::asset('/assets/img/dppkb/itenas.jpg') }}" class="img-fluid" alt="Logo">
                     </a>
                 </div>
                 <div class="main-menu-wrapper">
@@ -44,18 +43,18 @@
                             <a class="text-dark" style="cursor: pointer">Profile<i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="{{ url('/about-us') }}">Profile, Visi & Misi</a></li>
-                                <li><a href="{{ url('/struktur-organisasi') }}">Struktur Organisasi</a></li>
-                                <li><a href="{{ url('/tugas-pokok-fungsi') }}">Tugas Pokok dan Fungsi</a></li>
-                                <li><a href="{{ url('/profile-pejabat') }}">Profil Pejabat Struktural</a></li>
-                                <li><a href="{{ url('/data-pegawai') }}">Data Pegawai DPPKB</a></li>
+                                <!-- <li><a href="{{ url('/struktur-organisasi') }}">Struktur Organisasi</a></li>
+                                <li><a href="{{ url('/tugas-pokok-fungsi') }}">Tugas Pokok dan Fungsi</a></li> -->
+                                <li><a href="{{ url('/profile-pejabat') }}">Data Dosen</a></li>
+                                <li><a href="{{ url('/data-pegawai') }}">Program Studi</a></li>
                             </ul>
                         </li>
                         <li class="has-submenu">
                             <a class="text-dark" style="cursor: pointer">Informasi<i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu">
-                                <li><a href="{{ url('/list-content') }}">List Informasi</a></li>
+                                <!-- <li><a href="{{ url('/list-content') }}">List Informasi</a></li> -->
                                 <li><a href="{{ url('/pengumuman') }}">Pengumuman</a></li>
-                                <li><a href="{{ url('/agenda') }}">Agenda</a></li>
+                                <li><a href="{{ url('/agenda') }}">Berita</a></li>
                                 <li><a href="{{ url('/artikel') }}">Artikel</a></li>
                             </ul>
                         </li>
@@ -63,34 +62,7 @@
                             <a href="{{ url('/galeri') }}">Galeri</a>
                         </li>
                         <li class="has-submenu">
-                            <a class="text-dark" style="cursor: pointer">Data - Data<i class="fas fa-chevron-down"></i></a>
-                            <ul class="submenu">
-                                <li><a href="{{ url('/data-stanting') }}">Data Stunting</a></li>
-                                <li><a href="{{ url('/dokumen') }}">Download Dokumen</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-submenu">
-                            <a class="text-dark" style="cursor: pointer">Layanan<i class="fas fa-chevron-down"></i></a>
-                            <ul class="submenu">
-                                <li><a href="{{ url('/layanan/bppp') }}">
-                                        <div class="text-wrap">
-                                            Bidang Pengendalian Penduduk dan Penggerakan
-                                        </div>
-                                    </a></li>
-                                <li><a href="{{ url('/layanan/bkbkkk') }}">
-                                        <div class="text-wrap">
-                                            Bidang Keluarga Berencana Ketahanan dan Kesejahteraan Keluarga</div>
-                                    </a></li>
-                            </ul>
-                        </li>
-                        <li class="has-submenu">
-                            <a class="text-dark" style="cursor: pointer">PPID<i class="fas fa-chevron-down"></i></a>
-                            <ul class="submenu">
-                                <li><a href="{{ url('/tentang-ppid') }}">Tentang PPID</a></li>
-                                <li><a href="{{ url('/daftar-info-public') }}">Daftar Informasi Publik</a></li>
-                                <li><a href="{{ url('/daftar-info-kecuali') }}">Daftar Informasi Dikecualikan</a></li>
-                                <!-- <li><a href="javascript:void(0);">Artikel</a></li> -->
-                            </ul>
+                            <a href="{{ url('https://pmb.itenas.ac.id') }}">PMB Itenas</a>
                         </li>
                         <li class="has-submenu">
                             <a href="{{ url('/hub-kami') }}">Hubungi Kami</a>

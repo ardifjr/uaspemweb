@@ -5,10 +5,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <title>DPPKB</title>
+      <title>ITENAS</title>
 
       <!-- Favicon -->
-      <link rel="shortcut icon" type="image/x-icon" href="{{url('assets/img/dppkb/logo_bdg.png')}}">
+      <link rel="shortcut icon" type="image/x-icon" href="{{url('assets/img/dppkb/itenas.jpg')}}">
       @include('layout.partials.head-main')
     </head>
     <body>
