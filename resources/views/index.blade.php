@@ -10,8 +10,10 @@
                         style="width: 100%; object-fit: cover; height: 706px;">
                 </div>
             @endforeach
+            
         </div>
     </section>
+
     <!-- /Banner Section -->
 
     <!-- Tentang DPPKB -->
