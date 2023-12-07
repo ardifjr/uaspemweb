@@ -20,12 +20,12 @@
 
     <!-- /Banner Section -->
 
-    <!-- Tentang DPPKB -->
+    <!-- Tentang itenas -->
     <section class="about-us-eight-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-12 p-3">
-                    <iframe class="video-yt" src="https://www.youtube.com/embed/ZzyqXPNDDas?si=kDlZbxN7gdhiucPM"
+                    <iframe class="video-yt" src="https://www.youtube.com/embed/mkL8rrLnClE?si=LXM-FwJ-vR7r0euI"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -34,10 +34,14 @@
                     <div class="passion-eight-all">
                         <div class="section-heading section-heading-eight passion-eight-heading aos" data-aos="fade-up">
                             <h2>Tentang Kita</h2>
-                            <h2>{{ $data->title }}</h2>
+                            <h2>Judulnya</h2>
+                            <p>
+                                isi konten tentang kitanya
+                            </p>
+                            <!-- <h2>{{ $data->title }}</h2>
                             <p>
                                 {!! $data->detail !!}
-                            </p>
+                            </p> -->
                             <div>
                                 <a href="{{ url('/about-us') }}" class="btn btn-primary btn-view">Profile</a>
                             </div>
@@ -46,62 +50,30 @@
                 </div>
             </div>
     </section>
-    <!-- /Tentang DPPKB -->
+    <!-- /Tentang itenas -->
 
 
-    <!-- aplikasi terkait -->
-    <section class="categories-section p-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="section-heading category-heading aos" data-aos="fade-up">
-                        <h2>Aplikasi Terkait</h2>
-                        <p>Berikut ini adalah aplikasi terkait</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                @foreach ($products as $product)
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-12" data-aos="fade-up">
-                        <a href="{{ $product->url_link }}">
-                            <div class="categories-main-all">
-                                <div class="categories-img">
-                                    <span>
-                                        @if ($product->image)
-                                            <img src="{{ $product->image }}">
-                                        @else
-                                            <img src="assets/img/icons/categories-2.svg">
-                                        @endif
-                                    </span>
-                                </div>
-                                <h6>{{ $product->name }}</h6>
-                                <span class="category-bottom">
-                                    <i class="feather-chevron-right "></i>
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-    <!-- /aplikasi terkait -->
 
     <!-- Pengumuman Section -->
     <section class="app-seven-section px-3 py-5">
         <div class="container">
             <div class="app-sec app-sec-seven p-5">
-                @foreach ($announcements as $announcement)
+            <h2 class="text-dark">Pengumuman terbaru</h2>
+            <p class="text-dark">Nanti disiini munculin konten pengumuman</p>
+            
+                <!-- @foreach ($announcements as $announcement) -->
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-6 col-12">
-                            <img src="{{ $announcement->url_file }}" class="img-fluid rounded-4" alt="img"
-                                style="width: 100%; height: 100%;">
+                            <img src="/assets/img/dppkb/itenas.jpg" class="img-fluid rounded-4" alt="img"
+                                    style="width: 100%; height: 100%;">
+                            <!-- <img src="{{ $announcement->url_file }}" class="img-fluid rounded-4" alt="img"
+                                style="width: 100%; height: 100%;"> -->
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="new-app-seven-middle">
                                 <div class="heading aos" data-aos="fade-up">
                                     <h2 class="text-dark">Pengumuman terbaru</h2>
-                                    <h3>{{ $announcement->title }}</h3>
+                                    <!-- <h3>{{ $announcement->title }}</h3>
 
                                     @if (strlen($announcement->detail) <= 350)
                                         {!! $announcement->detail !!}
@@ -111,13 +83,13 @@
                                             <a href="{{ route('detail-pengumuman', $announcement->id) }}"
                                                 class="btn btn-primary">Selengkapnya</a>
                                         </div>
-                                    @endif
+                                    @endif -->
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                @endforeach
+                <!-- @endforeach -->
             </div>
         </div>
     </section>
