@@ -4,12 +4,16 @@
     <!-- Banner Section -->
     <section class="hero-section-two">
         <div class="banner-slider slider">
-            @foreach ($carousels as $carousel)
+            <div class="banner">
+                    <img class="img-fluid" src="/assets/img/dppkb/itenaspanjang.png" alt="img"
+                        style="width: 100%; object-fit: cover; height: 706px;">
+                </div>
+            <!-- @foreach ($carousels as $carousel)
                 <div class="banner">
                     <img class="img-fluid" src="{{ $carousel->url_file }}" alt="img"
                         style="width: 100%; object-fit: cover; height: 706px;">
                 </div>
-            @endforeach
+            @endforeach -->
             
         </div>
     </section>
