@@ -60,7 +60,6 @@
             <div class="app-sec app-sec-seven p-5">
             <h2 class="text-dark">Pengumuman terbaru</h2>
             <p class="text-dark">Nanti disiini munculin konten pengumuman</p>
-            
                 <!-- @foreach ($announcements as $announcement) -->
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-6 col-12">
@@ -102,12 +101,13 @@
                 <div class="row">
                     <div class="col-md-6 aos" data-aos="fade-up">
                         <h2>Berita</h2>
+                        <p>nah disini data konten berita</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="gcse-search"></div>
+                    <!-- <div class="gcse-search"></div> -->
                 </div>
             </div>
         </div>
@@ -121,6 +121,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 aos" data-aos="fade-up">
                         <h2 class="">Gallery</h2>
+                        <p>ini nanti data galeri itenas</p>
                     </div>
                     <div class="col-md-6 text-md-end aos" data-aos="fade-up">
                         <a href="{{ url('/galeri') }}" class="btn btn-primary btn-view">LIHAT SEMUA GALERI<i
@@ -204,35 +205,6 @@
 
     <!-- /Gallery -->
 
-    <!-- Map -->
-    <section class="about-us-eight-section p-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-6 aos my-5" data-aos="fade-up">
-                        <h2>Persebaran Kampung KB</h2>
-                    </div>
-                    <div class="form-group">
-                        <div class="map-grid">
-                            <div class="filter-map">
-                                <button onclick="allLocation()" class="btn px-2 btn-outline-primary mb-2">
-                                    Semua
-                                </button>
-                                @for ($i = 0; $i < count($locations); $i++)
-                                    <button onclick="filterLocation('{{ $locations[$i] }}')"
-                                        class="btn px-5 btn-outline-primary mb-2">
-                                        {{ $locations[$i] }}
-                                    </button>
-                                @endfor
-                            </div>
-                            <div id="map"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- /Map -->
-
     <!-- widget youtube -->
     <section class="feature-section p-3">
         <div class="container">
@@ -245,7 +217,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 col-12">
-                    <div class="elfsight-app-056ff0f1-7ef1-4fd3-a9a6-a23672525f18" data-elfsight-app-lazy></div>
+                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                <div class="elfsight-app-0cdfd410-a086-4d3e-a8f0-b4b78a4ca250" data-elfsight-app-lazy></div>                
                 </div>
             </div>
         </div>
@@ -264,8 +237,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 col-12">
-                    <div class="elfsight-app-b53da1d4-f385-4422-93bc-a70837c918db" data-elfsight-app-lazy></div>
-                </div>
+                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-a47b92e0-9b79-4217-8f75-8ed74cee0c1c" data-elfsight-app-lazy></div>
             </div>
         </div>
     </section>
@@ -349,15 +322,16 @@
                 <div class="col-md-12 text-center aos" data-aos="fade-up">
                     <div class="section-heading">
                         <h2>Link Terkait</h2>
+                        <p>ini disini nanti beberapa link terkait itenas</p>
                     </div>
                 </div>
                 <div class="owl-carousel partners-slider aos" data-aos="fade-up">
-                    @foreach ($linkterkait as $link)
+                    <!-- @foreach ($linkterkait as $link)
                         <div class="partner-img">
                             <a href ="{{ $link->detail }}" target="blank"><img src="{{ $link->url_file }}"
                                     alt="img"></a>
                         </div>
-                    @endforeach
+                    @endforeach -->
                 </div>
             </div>
         </div>
@@ -373,27 +347,17 @@
                     <div class="col-lg-6 col-12">
                         <div class="col-md-12">
                             <div class="heading aos" data-aos="fade-up">
-                                <h2>Download Our App</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua.</p>
-                                <h6>Scan the QR code to get the app now</h6>
-                                <div class="scan-img">
-                                    <img src="assets/img/scan-img.png" class="img-fluid" alt="img">
-                                </div>
+                                <h2>Institut Teknologi Nasional Bandung</h2>
+                                <p>Institut Teknologi Nasional (Itenas) Bandung merupakan perguruan tinggi yang terletak di Jl. PH.H. Mustopa No. 23 – Bandung. 
+                                    Area yang mudah dijangkau dari berbagai arah Kota Bandung menjadikan lokasi Kampus Itenas cukup strategis.
+                                     Dikelilingi oleh berbagai pusat perbelanjaan, pusat kuliner, percetakan, dan juga perumahan, Itenas menjadi salah satu kampus yang sangat hidup dan menyenangkan.</p>
+                                <h6>It's A Good Start</h6>
                             </div>
-                        </div>
-                        <div class="downlaod-btn aos" data-aos="fade-up">
-                            <a href="#" target="_blank">
-                                <img src="assets/img/googleplay.svg" alt="img">
-                            </a>
-                            <a href="#" target="_blank">
-                                <img src="assets/img/appstore.svg" alt="img">
-                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12">
-                        <div class="appimg-set aos" data-aos="fade-up">
-                            <img src="assets/img/app-img2.png" class="img-fluid" alt="img">
+                        <div class="appimg-set aos float-right" data-aos="fade-up">
+                            <img src="assets/img/offer-img.png" class="img-fluid" alt="img">
                         </div>
                     </div>
                 </div>
