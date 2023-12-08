@@ -2,13 +2,13 @@
 @section('content')
     @component('components.breadcrumb')
         @slot('title')
-            Data Pegawai DPPKB
+            Data Program Studi
         @endslot
         @slot('li_1')
             Profile
         @endslot
         @slot('li_2')
-            Data Pegawai DPPKB
+            Data Program Studi
         @endslot
     @endcomponent
 
@@ -16,16 +16,16 @@
         <div class="container">
             <div class="row justify-content-center p-3">
                  <!-- Search Form -->
-                 <form action="#" method="GET" class="mb-3" style="max-width: 900px; margin: 0 auto;">
+                 <!-- <form action="#" method="GET" class="mb-3" style="max-width: 900px; margin: 0 auto;">
                     <div class="input-group">
                         <input type="text" name="search" class="form-control" placeholder="Search...">
                         <button type="submit" class="btn btn-primary">Search</button>
                     </div>
-                </form>
+                </form> -->
                 <!-- /Search Form -->
                 <!-- Display Dynamic Data -->
-                @foreach($dataPegawai as $pegawai)
-                <div class="pegawai row py-5 align-items-center justify-content-center gap-5">
+                <!-- @foreach($dataPegawai as $pegawai) -->
+                <!-- <div class="pegawai row py-5 align-items-center justify-content-center gap-5">
                     <div class="col-auto d-flex">
                         <img style="height: 160px; object-fit: cover; width: 160px; border-radius: 15px;"
                             src="{{$pegawai->photo}}"
@@ -73,13 +73,13 @@
                         </div>
                     </div>
                 </div>
-                @endforeach
+                @endforeach -->
                 <!-- /Display Dynamic Data -->
 
                 <!-- Display Pagination Links -->
-                <div class="pagination justify-content-end" style="margin-top: 0px !important;">
+                <!-- <div class="pagination justify-content-end" style="margin-top: 0px !important;">
                     {{ $dataPegawai->links() }}
-                </div>
+                </div> -->
                 <!-- /Display Pagination Links -->
             </div>
         </div>
