@@ -1,5 +1,6 @@
 <!-- scrollToTop start -->
 @if(!Route::is(['index-3']))
+
 <div class="progress-wrap active-progress">
 @endif
 @if(Route::is(['index-3']))
