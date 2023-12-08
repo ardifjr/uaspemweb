@@ -2,13 +2,13 @@
 @section('content')
     @component('components.breadcrumb')
         @slot('title')
-            Profile Pejabat Struktural
+            Profile Dosen
         @endslot
         @slot('li_1')
             Profile
         @endslot
         @slot('li_2')
-            Profile Pejabat Struktural
+            Profile Dosen
         @endslot
     @endcomponent
 
@@ -16,10 +16,10 @@
         <!-- About -->
         <div class="about-sec">
             <div class="container">
-                @foreach($profiles as $profile)
+                <!-- @foreach($profiles as $profile) -->
                     <div class="row align-items-center mt-5"> <!-- Menambahkan margin top 4 -->
                         <div class="col-lg-6">
-                            <div class="about-img">
+                            <!-- <div class="about-img">
                                 <div class="about-exp">
                                     <span>DPPKB KOTA BANDUNG</span>
                                 </div>
@@ -35,17 +35,17 @@
                                 <p>
                                     {!! $profile->detail !!}
                                 </p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                @endforeach
+                <!-- @endforeach -->
 
                 <!-- Pagination Links -->
-                <div class="row mt-4"> <!-- Menambahkan margin top 4 untuk bagian pagination -->
+                <!-- <div class="row mt-4"> 
                     <div class="col-md-12">
                         {{ $profiles->links() }}
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
