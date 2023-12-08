@@ -3,6 +3,7 @@
 <div class="progress-wrap active-progress">
 @endif
 @if(Route::is(['index-3']))
+
 <div class="progress-wrap active-progress progress-wrap-three">
 @endif
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
