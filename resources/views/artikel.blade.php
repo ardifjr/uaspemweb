@@ -14,11 +14,11 @@
 
     <div class="content">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-8 col-md-12">
-                     @foreach($artikels as $artikel) 
+                     @foreach($artikels as $artikel)  -->
                         <!-- Blog Post -->
-                        <div class="blog blog-list">
+                        <!-- <div class="blog blog-list">
                             <div class="blog-image">
                                 <a href="{{ route('artikel.showartikel', ['id' => $artikel->id]) }}"><img class="img-fluid"
                                         src="{{ $artikel->url_file }}" alt="Post Image"></a>
@@ -44,20 +44,20 @@
                                 
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- /Blog Post -->
-                    @endforeach
+                    <!-- @endforeach
 
                     <div class="blog-pagination float-end mb-5">
                         {{ $artikels->links() }}
                     </div> 
-                </div>
+                </div> -->
 
                 <!-- Blog Sidebar -->
-                <div class="col-lg-4 col-md-12 blog-sidebar theiaStickySidebar">
+                <!-- <div class="col-lg-4 col-md-12 blog-sidebar theiaStickySidebar"> -->
 
                     <!-- Search -->
-                    <div class="card search-widget">
+                    <!-- <div class="card search-widget">
                         <div class="card-body">
                             <form class="search-form"action="{{ route('artikel.index') }}" method="GET">
                                 <div class="input-group">
@@ -66,11 +66,11 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /Search -->
 
                     <!-- Categories -->
-                    <div class="card category-widget">
+                    <!-- <div class="card category-widget">
                         <div class="card-body">
                             <h4 class="side-title">Kategori Artikel</h4>
                             <ul class="categories">
@@ -80,11 +80,11 @@
                                 <li><a href="{{ route('artikel.index') }}">Lihat Semua</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /Categories -->
 
                    <!-- Latest Posts -->
-                    <div class="card post-widget">
+                    <!-- <div class="card post-widget">
                         <div class="card-body">
                             <h4 class="side-title">Artikel Terbaru</h4>
                             <ul class="latest-posts">
@@ -99,15 +99,15 @@
                                             <p>{{ $artikelnew->created_at->format('d M Y') }}</p>
                                             <h4>
                                                 <a href="{{ route('artikel.showartikel', ['id' => $artikel->id]) }}">{{ $artikelnew->title }}</a>
-                                            </h4>
+                                            </h4> -->
                                             <!-- Menampilkan nama kategori -->
-                                            <p>Kategori: {{ $artikelnew->category->name }}</p>
+                                            <!-- <p>Kategori: {{ $artikelnew->category->name }}</p>
                                         </div>
                                     </li>
                                 @endforeach
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /Latest Posts -->
                 </div>
                 <!-- /Blog Sidebar -->
