@@ -16,11 +16,11 @@
 @endphp
     <div class="content">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
+            <!-- <div class="row">
+                <div class="col-md-12 col-lg-12"> -->
 
                     <!-- Sort -->
-                    <div class="row align-items-center">
+                    <!-- <div class="row align-items-center">
                     <div class="widget-title">
                                 <h4>Galleries</h4>
                             </div>
@@ -36,10 +36,10 @@
                             <button type="submit" class="btn btn-primary mb-2">Cari</button>
                         </form>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /Sort -->
 
-                    <div class="row">
+                    <!-- <div class="row">
                     @foreach ($galleries as $gallery)
                         <div class="col-xl-3 col-md-6">
                             <div class="service-widget servicecontent">
@@ -64,15 +64,15 @@
                                     </h3>
                                     <div class="">
                                     <a href="#" data-toggle="modal" data-target="#galleryModal{{$gallery->id}}" class="btn btn-book">Detail</a>
-                                </div>
+                                </div> -->
 
                                 <!-- Modal for each gallery -->
-                                <div class="modal fade" id="galleryModal{{$gallery->id}}" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel{{$gallery->id}}" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document">
+                                <!-- <div class="modal fade" id="galleryModal{{$gallery->id}}" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel{{$gallery->id}}" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" role="document"> -->
                                         <!-- Modal content -->
-                                        <div class="modal-content" style="max-height: max-content; overflow: hidden;">
+                                        <!-- <div class="modal-content" style="max-height: max-content; overflow: hidden;"> -->
                                             <!-- Modal header -->
-                                            <div class="modal-header">
+                                            <!-- <div class="modal-header">
                                                 <div class="d-flex justify-content-between align-items-center" style="width : 100%;">
                                                     <div class="col-auto">
                                                         <h5 id="galleryModalLabel{{$gallery->id}}">{{$gallery->title}}</h5>
@@ -81,11 +81,11 @@
                                                         <button class="btn btn-primary" data-dismiss="modal" aria-label="Close">Close</button>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <!-- Modal body -->
-                                            <div class="modal-body">
+                                            <!-- <div class="modal-body"> -->
                                                 <!-- Display gallery details -->
-                                                <div class="row">
+                                                <!-- <div class="row">
                                                     <div class="col-md-6 p-4 modal-prev">
                                                     @if (strpos($gallery->url_file, '.mp4') !== false)
                                                     <video  width="100%" height="200px" style="max-width: 100%; width:100%;" controls>
@@ -100,9 +100,9 @@
                                                         <h6>Detail:</h6>
                                                         <p>{{$gallery->detail}}</p>
                                                         <h6>Type:</h6>
-                                                        <p>{{$gallery->type->name}}</p>
+                                                        <p>{{$gallery->type->name}}</p> -->
                                                         <!-- Other information if available -->
-                                                    </div>
+                                                    <!-- </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -118,7 +118,7 @@
                         <div>
                             {{ $galleries->links() }}
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
