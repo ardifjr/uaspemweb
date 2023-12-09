@@ -2,13 +2,13 @@
 @section('content')
     @component('components.breadcrumb')
         @slot('title')
-            Agenda
+            Berita
         @endslot
         @slot('li_1')
             Informasi
         @endslot
         @slot('li_2')
-            Agenda
+            Berita
         @endslot
     @endcomponent
 
@@ -17,11 +17,11 @@
         <div class="row col-12">
         <div class="content">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-8 col-md-12">
-                @foreach ($allagendas as $allagenda)
+                @foreach ($allagendas as $allagenda) -->
                     <!-- Blog Post -->
-                    <div class="blog blog-list">
+                    <!-- <div class="blog blog-list">
                         <div class="blog-image">
                         <a href="{{ route('detail-agenda', $allagenda->id) }}"><img class="img-fluid" src="{{$allagenda->url_file }}" alt="Post Image"></a>
                         </div>
@@ -43,24 +43,24 @@
                             </div>
                         </div>
                         
-                    </div>
+                    </div> -->
                     <!-- /Blog Post -->
                     @endforeach
 
 
                 <!-- Blog Pagination -->
-                <div class="blog-pagination">
+                <!-- <div class="blog-pagination">
                     {{ $allagendas->links() }}
-                </div>
+                </div> -->
                <!-- /Blog Pagination -->
 
-                </div>
+                <!-- </div> -->
 
                 <!-- Blog Sidebar -->
-                <div class="col-lg-4 col-md-12 blog-sidebar theiaStickySidebar">
+                <!-- <div class="col-lg-4 col-md-12 blog-sidebar theiaStickySidebar"> -->
 
                     <!-- Search -->
-                    <div class="card search-widget">
+                    <!-- <div class="card search-widget">
                         <div class="card-body">
                             <form class="search-form" action="{{ route('agenda.index') }}" method="GET">
                                 <div class="input-group">
@@ -69,11 +69,11 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /Search -->
 
                     <!-- Categories -->
-                    <div class="card category-widget">
+                    <!-- <div class="card category-widget">
                         <div class="card-body">
                             <h4 class="side-title">Kategori Agenda</h4>
                             <ul class="categories">
@@ -84,11 +84,11 @@
 
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /Categories -->
 
                     <!-- Latest Posts -->
-                    <div class="card post-widget">
+                    <!-- <div class="card post-widget">
                         <div class="card-body">
                             <h4 class="side-title">Agenda Terbaru</h4>
                             <ul class="latest-posts">
@@ -114,7 +114,7 @@
                                 @endforeach
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /Latest Posts -->
 
                 </div>
