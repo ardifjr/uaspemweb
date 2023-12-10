@@ -1,6 +1,7 @@
 <!-- Breadcrumb -->
 @if(!Route::is(['invoice']))
 <div class="breadcrumb-bar">
+    
     <div class="container">
         <div class="row">
             @if(!Route::is(['providers','provider-details']))

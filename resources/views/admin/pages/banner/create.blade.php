@@ -1,6 +1,7 @@
 <?php $page = 'add-user'; ?>
 @extends('layout.mainlayout_admin')
 @section('content')
+
     <div class="page-wrapper">
         <div class="content">
             <form action="{{ url('admin/banner') }}" method="post" enctype="multipart/form-data">

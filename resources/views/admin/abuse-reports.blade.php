@@ -1,4 +1,5 @@
 <?php $page = 'abuse-reports'; ?>
+
 @extends('layout.mainlayout_admin')
 @section('content')
     <div class="page-wrapper page-settings">
@@ -10,7 +11,6 @@
                     Abuse Reports
                 @endslot
             @endcomponent
-
             <div class="row">
                 <div class="col-12 ">
                     <div class="table-resposnive">
