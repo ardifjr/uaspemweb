@@ -14,7 +14,7 @@
 
 <div class="content p-3">
     <div class="container">
-        <div class="row col-12">
+        <!-- <div class="row col-12">
             <div class="new-comment">
                 <h4 class="text-center">Kritik & Saran</h4>
                 <form action="{{ url('suggestions') }}" method="post">
@@ -73,7 +73,7 @@
                             <button class="btn btn-primary submit-btn" type="submit">Submit</button>
                         </div>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
     </div>

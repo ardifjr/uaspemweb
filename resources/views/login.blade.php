@@ -19,7 +19,7 @@
                     <div class="card shadow">
                         <div class="card-body">
                             <h3 class="card-title text-center mb-4 text-primary">Login</h3>
-                            <form action="{{ url('auth/login') }}" method="POST">
+                            <!-- <form action="{{ url('auth/login') }}" method="POST"> -->
                                 @csrf
                                 <div class="mb-3">
                                     <label for="username" class="form-label">Username</label>
