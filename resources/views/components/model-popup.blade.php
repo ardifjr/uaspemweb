@@ -3,6 +3,7 @@
 <div class="modal fade custom-modal" id="add-wallet">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
+            
             <div class="modal-header border-bottom-0 justify-content-between">
                 <h5 class="modal-title">Add Wallet</h5>
                 <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="feather-x"></i></button>
