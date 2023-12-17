@@ -2,6 +2,7 @@
 @extends('layout.mainlayout_admin')
 @section('content')
     <div class="main-wrapper">
+        
         <div class="change-password">
             <div class="change-passwordback">
                 <a href="{{ url('admin/storage-settings') }}"><i class="fe fe-arrow-left me-2"></i>Back </a>
