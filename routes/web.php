@@ -51,7 +51,6 @@ Route::middleware('guest')->group(function () {
     Route::get('/artikel', [ContentController::class, 'artikelpage'])->name('artikel.index');
     Route::get('/artikel/{category}', [ContentController::class, 'showByCategory'])->name('artikel.category');    
     Route::get('/artikel-detail/{id}', [ContentController::class, 'showartikel'])->name('artikel.showartikel');    
-
     Route::get('/announcement/{id}', 'LandingPageController@showannouncement')->name('announcement.show');
     Route::get('/pengumuman', [LandingPageController::class, 'pengumuman'])->name('pengumuman.index');
     Route::get('/detail_pengumuman/detail/{id}', [LandingPageController::class, 'detailPengumuman'])->name('detail-pengumuman');
