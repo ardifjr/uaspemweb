@@ -3,10 +3,10 @@
     <div class="sidebar-header">
         <div class="sidebar-logo">
             <a href="{{ url('admin/index_admin') }}">
-                <img src="{{ URL::asset('assets/img/dppkb/logo.png') }}" class="img-fluid logo px-3" alt="">
+                <img src="{{url('assets/img/dppkb/itenasputiih.png')}}" class="img-fluid logo px-3" alt="">
             </a>
             <a href="{{ url('admin/index_admin') }}">
-                <img src="{{ URL::asset('assets/img/dppkb/logo.png') }}" class="img-fluid logo-small px-3"
+                <img src="{{ URL::asset('assets/img/dppkb/itenas.jpg') }}" class="img-fluid logo-small px-3"
                     alt="">
             </a>
         </div>
@@ -28,7 +28,7 @@
                     <a class="{{ Request::is('admin/') ? 'active' : '' }}"
                         href="{{ url('admin/') }}"><i class="fe fe-grid "></i> <span>Dashboard</span></a>
                 </li>
-                <li class="menu-title m-0">
+                <!-- <li class="menu-title m-0">
                     <h6>Profile</h6>
                 </li>
                 <li class="submenu">
@@ -111,7 +111,7 @@
                 <li>
                     <a class="{{ Request::is('admin/daftarinformasidikecualikan') ? 'active' : '' }}"
                         href="{{ url('admin/daftarinformasidikecualikan') }}"><i class="fa-regular fa-rectangle-list"></i> <span>Daftar Informasi Dikecualikan</span></a>
-                </li>
+                </li> -->
                 <li class="menu-title">
                     <h6>Content</h6>
                 </li>
@@ -148,7 +148,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="submenu">
+                <!-- <li class="submenu">
                     <a href="javascript:void(0);"><i class="fe fe-image"></i>
                         <span> Galleries</span>
                         <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
@@ -163,8 +163,8 @@
                                 href="{{ url('admin/galleries/create') }}">Create</a>
                         </li>
                     </ul>
-                </li>
-                <li class="submenu">
+                </li> -->
+                <!-- <li class="submenu">
                     <a href="javascript:void(0);"><i class="fe fe-list"></i>
                         <span>Products</span>
                         <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
@@ -179,7 +179,7 @@
                                 href="{{ url('admin/products/create') }}">Create</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 
                 <li class="submenu">
                     <a href="javascript:void(0);"><i class="fe fe-file-text"></i>
@@ -197,7 +197,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="submenu">
+                <!-- <li class="submenu">
                     <a href="javascript:void(0);">
                         <i class="fe fe-map"></i>
                         <span>List Villages</span>
@@ -211,8 +211,8 @@
                             <a class="{{ Request::is('admin/list-villages/create') ? 'active' : '' }}" href="{{ url('admin/list-villages/create') }}">Create</a>
                         </li>
                     </ul>
-                </li>
-                <li class="submenu">
+                </li> -->
+                <!-- <li class="submenu">
                     <a href="javascript:void(0);">
                         <i class="fe fe-link"></i>
                         <span>Link Terkait</span>
@@ -228,8 +228,8 @@
                             href="{{ url('admin/linkterkait/create') }}"><span>Create</span></a>
                         </li>
                     </ul>
-                </li>
-                <li class="menu-title">
+                </li> -->
+                <!-- <li class="menu-title">
                     <h6>Layanan</h6>
                 </li>
                
@@ -241,7 +241,7 @@
                 <li>
                     <a class="{{ Request::is('admin/bkbkkk') ? 'active' : '' }}"
                         href="{{ url('admin/bkbkkk') }}"><i class="fa-solid fa-circle-info"></i></i></i> <span>BKBKKK</span></a>
-                </li>
+                </li> -->
 
                 <li class="menu-title">
                     <h6>User Management</h6>
@@ -262,7 +262,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="submenu">
+                <!-- <li class="submenu">
                     <a href="javascript:void(0);"><i class="fe fe-users"></i>
                         <span>Members</span>
                         <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
@@ -277,9 +277,9 @@
                                 href="{{ url('admin/members/create') }}">Create</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
 
-                <li class="menu-title">
+                <!-- <li class="menu-title">
                     <h6>Suggestions ( Kritik dan Saran )</h6>
                 </li>
 
@@ -294,7 +294,7 @@
                                 href="{{ url('admin/suggestions') }}">All</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
 
             </ul>
         </div>
