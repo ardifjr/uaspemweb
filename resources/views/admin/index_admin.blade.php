@@ -12,7 +12,7 @@
                                     <div class="home-usercount">
                                         <span><img src="{{ URL::asset('/admin_assets/img/icons/user.svg') }}"
                                                 alt="img"></span>
-                                        <h6>Data Pegawai</h6>
+                                        <h6>Data Dosen</h6>
                                     </div>
                                     <div class="home-useraction">
                                         <a class="delete-table bg-white" href="javascript:void(0);"
@@ -31,7 +31,8 @@
                                         <div class="home-usercontentcount">
                                             <img src="{{ URL::asset('/admin_assets/img/icons/arrow-up.svg') }}"
                                                 alt="img" class="me-2">
-                                                <span class="counters" data-count="{{ $memberCount }}">{{ $memberCount }}</span>
+                                                <!-- <span class="counters" data-count="{{ $memberCount }}">{{ $memberCount }}</span> -->
+                                                <span class="counters" data-count="10">10</span>
                                         </div>
                                         <h5> Jumlah Data</h5>
                                     </div>
@@ -50,7 +51,7 @@
                                 <div class="home-userhead">
                                     <div class="home-usercount">
                                         <span><img src="{{ URL::asset('/admin_assets/img/icons/user-circle.svg') }}" alt="img"></span>
-                                        <h6>Kampung KB</h6>
+                                        <h6>Konten</h6>
                                     </div>
                                     <div class="home-useraction">
                                         <a class="delete-table bg-white" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="true">
@@ -67,7 +68,8 @@
                                     <div class="home-usercontents">
                                         <div class="home-usercontentcount">
                                             <img src="{{ URL::asset('/admin_assets/img/icons/arrow-up.svg') }}" alt="img" class="me-2">
-                                            <span class="counters" data-count="{{ $listVillagesCount }}">{{ $listVillagesCount }}</span>
+                                            <!-- <span class="counters" data-count="{{ $listVillagesCount }}">{{ $listVillagesCount }}</span> -->
+                                            <span class="counters" data-count="10">10</span>
                                         </div>
                                         <h5> Jumlah Data</h5>
                                     </div>
@@ -107,7 +109,8 @@
                                         <div class="home-usercontentcount">
                                             <img src="{{ URL::asset('/admin_assets/img/icons/arrow-up.svg') }}"
                                                 alt="img" class="me-2">
-                                                <span class="counters" data-count="{{ $galleryCount }}">{{ $galleryCount }}</span>
+                                                <!-- <span class="counters" data-count="{{ $galleryCount }}">{{ $galleryCount }}</span> -->
+                                                <span class="counters" data-count="10">10</span>
                                         </div>
                                         <h5> Jumlah Data</h5>
                                     </div>
@@ -127,7 +130,7 @@
                                     <div class="home-usercount">
                                         <span><img src="{{ URL::asset('/admin_assets/img/icons/money.svg') }}"
                                                 alt="img"></span>
-                                        <h6>Product</h6>
+                                        <h6>Apa</h6>
                                     </div>
                                     <div class="home-useraction">
                                         <a class="delete-table bg-white" href="javascript:void(0);"
@@ -146,7 +149,8 @@
                                         <div class="home-usercontentcount">
                                             <img src="{{ URL::asset('/admin_assets/img/icons/arrow-up.svg') }}"
                                                 alt="img" class="me-2">
-                                                <span class="counters" data-count="{{ $productcount }}">{{ $productcount }}</span>
+                                                <!-- <span class="counters" data-count="{{ $productcount }}">{{ $productcount }}</span> -->
+                                                <span class="counters" data-count="10">10</span>
                                         </div>
                                         <h5> Jumlah Data</h5>
                                     </div>
@@ -180,7 +184,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach($pengumumanContent as $index => $content)
+                                            <!-- @foreach($pengumumanContent as $index => $content)
                                             <tr>
                                                 <td>{{ $index + 1 }}</td>
                                                 <td style="max-width: 50px" class="text-wrap">{!! substr($content->title, 0 , 15) !!}...</td>
@@ -191,7 +195,7 @@
                                                     {{ $content->created_at }}
                                                 </td>
                                             </tr>
-                                            @endforeach
+                                            @endforeach -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -220,7 +224,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach($artikelContent as $index => $artikel)
+                                            <!-- @foreach($artikelContent as $index => $artikel)
                                             <tr>
                                                 <td>{{ $index + 1 }}</td>
                                                 <td style="max-width: 50px" class="text-wrap">{!! substr($artikel->title, 0 , 15) !!}...</td>
@@ -231,7 +235,7 @@
                                                     {{ $artikel->created_at }}
                                                 </td>
                                             </tr>
-                                            @endforeach
+                                            @endforeach -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -265,7 +269,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($allContent as $index => $content)
+                                        <!-- @foreach($allContent as $index => $content)
                                             <tr>
                                                 <td>{{ $index + 1 }}</td>
                                                 <td>
@@ -288,7 +292,7 @@
                                                 <td>{{ $content->user->full_name }}</td>
                                                 <td>{{ $content->created_at }}</td>
                                             </tr>
-                                            @endforeach
+                                            @endforeach -->
                                         </tbody>
                                     </table>
                                 </div>
