@@ -19,7 +19,6 @@ class UserController extends Controller
     function create() {
         return view('admin.pages.users.create');
     }
-
     public function store(Request $request){
         // User::create($request->all());
         $validatedData = $request->validate([

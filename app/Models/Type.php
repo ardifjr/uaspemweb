@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Auth;
 class Type extends Model
 {
     use HasFactory;
-
     protected $table = 'types';
 
     protected $fillable = [

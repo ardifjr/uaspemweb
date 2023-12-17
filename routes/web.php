@@ -51,7 +51,6 @@ Route::middleware('guest')->group(function () {
     Route::get('/artikel', [ContentController::class, 'artikelpage'])->name('artikel.index');
     Route::get('/artikel/{category}', [ContentController::class, 'showByCategory'])->name('artikel.category');    
     Route::get('/artikel-detail/{id}', [ContentController::class, 'showartikel'])->name('artikel.showartikel');    
-
     Route::get('/announcement/{id}', 'LandingPageController@showannouncement')->name('announcement.show');
     Route::get('/pengumuman', [LandingPageController::class, 'pengumuman'])->name('pengumuman.index');
     Route::get('/detail_pengumuman/detail/{id}', [LandingPageController::class, 'detailPengumuman'])->name('detail-pengumuman');
@@ -62,8 +61,6 @@ Route::middleware('guest')->group(function () {
     Route::get('/admin/members', [MemberController::class, 'index']);
     Route::get('/data-pegawai', [MemberController::class, 'dataPegawai']);    
     Route::get('/struktur-organisasi', [OrganitationController::class, 'index'])->name('struktur-organisasi');
-
-
     Route::get('/error-404', function () { 
         return view('error-404');
     })->name('error-404');

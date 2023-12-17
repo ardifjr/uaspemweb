@@ -7,7 +7,6 @@
                 @csrf @method('put')
                 <div class="row">
                     <div class="col-lg-7 col-sm-12 m-auto">
-
                         @component('admin.components.addpageheader')
                             @slot('addtitle')
                                 Edit categories
