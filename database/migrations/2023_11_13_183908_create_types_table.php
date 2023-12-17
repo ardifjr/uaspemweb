@@ -19,7 +19,6 @@ class CreateTypesTable extends Migration
             $table->text('desc')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->timestamps();
-
             $table->foreign('user_id')->references('id')->on('users');
         });
     }
