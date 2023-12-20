@@ -20,7 +20,6 @@ class AuthController extends Controller
         Alert::warning('WARNING', 'Login Failed');
         return back();
     }
-
     public function logout(Request $request)
     {
         Auth::logout();
