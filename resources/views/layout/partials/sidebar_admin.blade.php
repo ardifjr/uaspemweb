@@ -6,7 +6,7 @@
                 <img src="{{url('assets/img/dppkb/itenasputiih.png')}}" class="img-fluid logo px-3" alt="">
             </a>
             <a href="{{ url('admin/index_admin') }}">
-                <img src="{{ URL::asset('assets/img/dppkb/itenas.jpg') }}" class="img-fluid logo-small px-3"
+                <img src="{{ URL::asset('assets/img/dppkb/logo.png') }}" class="img-fluid logo-small px-3"
                     alt="">
             </a>
         </div>
