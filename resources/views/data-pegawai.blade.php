@@ -24,8 +24,8 @@
                 </form> -->
                 <!-- /Search Form -->
                 <!-- Display Dynamic Data -->
-                <!-- @foreach($dataPegawai as $pegawai) -->
-                <!-- <div class="pegawai row py-5 align-items-center justify-content-center gap-5">
+                @foreach($dataPegawai as $pegawai)
+                <div class="pegawai row py-5 align-items-center justify-content-center gap-5">
                     <div class="col-auto d-flex">
                         <img style="height: 160px; object-fit: cover; width: 160px; border-radius: 15px;"
                             src="{{$pegawai->photo}}"
@@ -73,13 +73,13 @@
                         </div>
                     </div>
                 </div>
-                @endforeach -->
+                @endforeach
                 <!-- /Display Dynamic Data -->
 
                 <!-- Display Pagination Links -->
-                <!-- <div class="pagination justify-content-end" style="margin-top: 0px !important;">
+                <div class="pagination justify-content-end" style="margin-top: 0px !important;">
                     {{ $dataPegawai->links() }}
-                </div> -->
+                </div>
                 <!-- /Display Pagination Links -->
             </div>
         </div>

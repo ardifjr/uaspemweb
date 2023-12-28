@@ -262,7 +262,7 @@
                         </li>
                     </ul>
                 </li>
-                <!-- <li class="submenu">
+                <li class="submenu">
                     <a href="javascript:void(0);"><i class="fe fe-users"></i>
                         <span>Members</span>
                         <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
@@ -277,7 +277,7 @@
                                 href="{{ url('admin/members/create') }}">Create</a>
                         </li>
                     </ul>
-                </li> -->
+                </li>
 
                 <!-- <li class="menu-title">
                     <h6>Suggestions ( Kritik dan Saran )</h6>
