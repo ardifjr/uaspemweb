@@ -4,6 +4,7 @@
         <div class="col-md-4">						
             <div class="provider-subtitle">
                 <h6>{{ $title }}</h6>
+                
             </div>
         </div>
         @if(!Route::is(['provider-availability','provider-holiday']))

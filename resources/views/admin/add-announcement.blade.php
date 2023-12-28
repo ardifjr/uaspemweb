@@ -1,9 +1,11 @@
 <?php $page = 'add-announcement'; ?>
+
 @extends('layout.mainlayout_admin')
 @section('content')
     <div class="page-wrapper">
         <div class="content">
             <form action="{{ url('admin/announcements') }}">
+                
                 <div class="row">
                     <div class="col-lg-7 col-sm-12 m-auto">
 

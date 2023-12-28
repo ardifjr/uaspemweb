@@ -1,4 +1,5 @@
 <?php $page = 'blog-details'; ?>
+
 @extends('layout.mainlayout')
 @section('content')
     @component('components.breadcrumb')

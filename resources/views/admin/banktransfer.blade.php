@@ -2,6 +2,7 @@
 @extends('layout.mainlayout_admin')
 @section('content')
     <div class="page-wrapper page-settings">
+        
 
         @component('layout.partials.settingssidemenu')
         @endcomponent

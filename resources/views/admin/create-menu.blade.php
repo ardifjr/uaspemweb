@@ -1,4 +1,5 @@
 <?php $page = 'create-menu'; ?>
+
 @extends('layout.mainlayout_admin')
 @section('content')
     <div class="page-wrapper">

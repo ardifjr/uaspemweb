@@ -2,6 +2,7 @@
     <!-- Add Featured Services -->
     <div class="modal fade" id="add-features" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
+            
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Add Featured Services</h5>

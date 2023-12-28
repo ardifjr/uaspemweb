@@ -82,7 +82,6 @@ Route::middleware('guest')->group(function () {
     Route::get('/blank-page', function () {
         return view('blank-page');
     })->name('blank-page');
-
     Route::get('/about-us', [AboutUsController::class, 'index'])->name('about_us');
     Route::get('/tentang-ppid', [TentangPPIDController::class, 'index'])->name('tentang_ppid');
     Route::get('/daftar-info-public', [DaftarInformasiPublikController::class, 'index'])->name('daftarinformasipublic');

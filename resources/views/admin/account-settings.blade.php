@@ -1,9 +1,11 @@
 <?php $page = 'account-settings'; ?>
 @extends('layout.mainlayout_admin')
 @section('content')
+
     <div class="page-wrapper page-settings">
 
         @component('layout.partials.settingssidemenu')
+        
         @endcomponent
 
         <div class="content w-100">

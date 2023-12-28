@@ -250,7 +250,7 @@
             <div class="row">
                 <div class="new-comment">
                     <h4 class="text-center">Kritik & Saran</h4>
-                    <form action="{{ url('suggestions') }}" method="post">
+                    <!-- <form action="{{ url('suggestions') }}" method="post"> -->
                         @method('post') @csrf
                         <div class="row">
                             <div class="col-md-6">
