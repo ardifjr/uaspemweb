@@ -20,9 +20,9 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <!-- <div class="about-img">
+                        <div class="about-img">
                             <div class="about-exp">
-                                <span>DPPKB KOTA BANDUNG</span>
+                                <span>ITENAS</span>
                             </div>
                             <div class="abt-img">
                                 <img src="{{ $data->url_file }}" class="img-fluid" alt="img">
@@ -36,7 +36,7 @@
                             <p>
                                 {!! $data->detail !!}
                             </p>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
         <!-- /About -->
 
         <!-- Visi Section -->
-        <!-- <section class="work-section work-bg">			
+        <section class="work-section work-bg">			
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -66,11 +66,11 @@
                     @endforeach
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- /Visi Section -->
 
         <!-- Misi Section -->
-        <!-- <section class="work-section work-bg">			
+        <section class="work-section work-bg">			
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -92,7 +92,7 @@
                     @endforeach
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- /Misi Section -->
     </div>
 @endsection

@@ -89,7 +89,6 @@ Route::middleware('guest')->group(function () {
     Route::get('/daftar-info-kecuali', [DaftarInformasiDikecualikanController::class, 'index'])->name('daftarinformasikecuali');
     Route::get('/profile-pejabat', [ProfilePejabatController::class, 'index'])->name('profile_pejabat');
     
-
     Route::get('/data-stanting', function () {
         return view('data-stanting');
     })->name('data-stanting');
