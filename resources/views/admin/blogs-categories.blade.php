@@ -1,5 +1,6 @@
 <?php $page = 'blogs-categories'; ?>
 @extends('layout.mainlayout_admin')
+
 @section('content')
     <div class="page-wrapper page-settings">
         <div class="content">
