@@ -148,7 +148,7 @@
                         </li>
                     </ul>
                 </li>
-                <!-- <li class="submenu">
+                <li class="submenu">
                     <a href="javascript:void(0);"><i class="fe fe-image"></i>
                         <span> Galleries</span>
                         <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
@@ -163,7 +163,7 @@
                                 href="{{ url('admin/galleries/create') }}">Create</a>
                         </li>
                     </ul>
-                </li> -->
+                </li>
                 <!-- <li class="submenu">
                     <a href="javascript:void(0);"><i class="fe fe-list"></i>
                         <span>Products</span>

@@ -87,7 +87,6 @@ Route::middleware('guest')->group(function () {
     Route::get('/daftar-info-public', [DaftarInformasiPublikController::class, 'index'])->name('daftarinformasipublic');
     Route::get('/tugas-pokok-fungsi', [TugasPokokdanFungsiController::class, 'index'])->name('tugaspokokdanfungsi');
     Route::get('/daftar-info-kecuali', [DaftarInformasiDikecualikanController::class, 'index'])->name('daftarinformasikecuali');
-
     Route::get('/profile-pejabat', [ProfilePejabatController::class, 'index'])->name('profile_pejabat');
     
 
