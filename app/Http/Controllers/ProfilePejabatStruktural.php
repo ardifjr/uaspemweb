@@ -42,8 +42,6 @@ class ProfilePejabatStruktural extends Controller
         Alert::success('SUCCESS', 'Data berhasil ditambahkan');
         return redirect('/admin/profilepejabatstruktural');
     }
-
-
     function profilepejabatrstrukturalAdmin()
     {
         $categories = Category::all();

@@ -16,12 +16,12 @@
         <!-- About -->
         <div class="about-sec">
             <div class="container">
-                <!-- @foreach($profiles as $profile) -->
+                @foreach($profiles as $profile)
                     <div class="row align-items-center mt-5"> <!-- Menambahkan margin top 4 -->
                         <div class="col-lg-6">
-                            <!-- <div class="about-img">
+                            <div class="about-img">
                                 <div class="about-exp">
-                                    <span>DPPKB KOTA BANDUNG</span>
+                                    <span>ITENAS</span>
                                 </div>
                                 <div class="abt-img">
                                     <img src="{{ $profile->url_file }}" class="img-fluid" alt="img" >
@@ -35,17 +35,17 @@
                                 <p>
                                     {!! $profile->detail !!}
                                 </p>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
-                <!-- @endforeach -->
+                @endforeach
 
                 <!-- Pagination Links -->
-                <!-- <div class="row mt-4"> 
+                <div class="row mt-4"> 
                     <div class="col-md-12">
                         {{ $profiles->links() }}
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
