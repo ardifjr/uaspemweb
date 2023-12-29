@@ -41,6 +41,7 @@ use App\Http\Controllers\MemberController;
 |
 */
 
+
 Route::middleware('guest')->group(function () {
     Route::get('/login', function () {
         return view('login');
@@ -59,7 +60,7 @@ Route::middleware('guest')->group(function () {
     Route::get('/detail_agenda/detail/{id}', [LandingPageController::class, 'detailAgenda'])->name('detail-agenda');
     Route::get('/agenda/{category}', [LandingPageController::class, 'showByAgenda'])->name('agenda.category');
     Route::get('/admin/members', [MemberController::class, 'index']);
-    Route::get('/data-pegawai', [MemberController::class, 'dataPegawai']);    
+    Route::get('/data-pegawai', [MemberController::class, 'allannouncement']);    
     Route::get('/struktur-organisasi', [OrganitationController::class, 'index'])->name('struktur-organisasi');
     Route::get('/error-404', function () { 
         return view('error-404');

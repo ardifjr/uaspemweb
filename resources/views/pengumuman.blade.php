@@ -17,11 +17,11 @@
         <div class="row col-12">
         <div class="content">
         <div class="container">
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col-lg-8 col-md-12">
-                @foreach ($allannouncements as $allannouncement) -->
+                @foreach ($allannouncements as $allannouncement)
                     <!-- Blog Post -->
-                    <!-- <div class="blog blog-list">
+                    <div class="blog blog-list">
                         <div class="blog-image">
                         <a href="{{ route('detail-pengumuman', $allannouncement->id) }}"><img class="img-fluid" src="{{$allannouncement->url_file }}" alt="Post Image"></a>
                         </div>
@@ -43,24 +43,23 @@
                             </div>
                         </div>
                         
-                    </div> -->
+                    </div>
                     <!-- /Blog Post -->
-                    <!-- @endforeach -->
-
+                    @endforeach
 
             <!-- Blog Pagination -->
-                <!-- <div class="blog-pagination">
+                <div class="blog-pagination">
                     {{ $allannouncements->links() }}
-                </div> -->
+                </div>
             <!-- /Blog Pagination -->
 
-                <!-- </div> -->
+                </div>
 
                 <!-- Blog Sidebar -->
-                <!-- <div class="col-lg-4 col-md-12 blog-sidebar theiaStickySidebar"> -->
+                <div class="col-lg-4 col-md-12 blog-sidebar theiaStickySidebar">
 
                     <!-- Search -->
-                    <!-- <div class="card search-widget">
+                    <div class="card search-widget">
                         <div class="card-body">
                             <form class="search-form" action="{{ route('pengumuman.index') }}" method="GET">
                                 <div class="input-group">
@@ -69,11 +68,11 @@
                                 </div>
                             </form>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- /Search -->
 
                     <!-- Categories -->
-                    <!-- <div class="card category-widget">
+                    <div class="card category-widget">
                         <div class="card-body">
                             <h4 class="side-title">Kategori Pengumuman</h4>
                             <ul class="categories">
@@ -83,11 +82,11 @@
                                 <li><a href="{{ route('pengumuman.index') }}">Lihat Semua</a></li>
                             </ul>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- /Categories -->
 
                     <!-- Latest Posts -->
-                    <!-- <div class="card post-widget">
+                    <div class="card post-widget">
                         <div class="card-body">
                             <h4 class="side-title">Pengumuman Terbaru</h4>
                             <ul class="latest-posts">
@@ -113,7 +112,7 @@
                                 @endforeach
                             </ul>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- /Latest Posts -->
 
                 </div>
