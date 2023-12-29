@@ -15,7 +15,6 @@ class GalleryController extends Controller
     {
         $this->FirebaseMethods = $FirebaseMethods;
     }
-
     function index() {
         $data = Gallery::latest()->filter(request(['search']))->paginate(5)->withQueryString();
         return view('admin.pages.galleries.index', [
