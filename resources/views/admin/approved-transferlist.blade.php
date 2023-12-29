@@ -1,4 +1,5 @@
 <?php $page = 'approved-transferlist'; ?>
+
 @extends('layout.mainlayout_admin')
 @section('content')
     <div class="page-wrapper page-settings">
