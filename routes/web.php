@@ -41,7 +41,6 @@ use App\Http\Controllers\MemberController;
 |
 */
 
-
 Route::middleware('guest')->group(function () {
     Route::get('/login', function () {
         return view('login');
