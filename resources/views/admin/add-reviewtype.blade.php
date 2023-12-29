@@ -1,5 +1,6 @@
 <?php $page = 'add-reviewtype'; ?>
 @extends('layout.mainlayout_admin')
+
 @section('content')
     <div class="page-wrapper">
         <div class="content">
