@@ -1,6 +1,7 @@
 <?php $page = 'chat'; ?>
 @extends('layout.mainlayout_admin')
 @section('content')
+
     <div class="page-wrapper">
         <div class="content container-fluid">
             <div class="row chat-window">
