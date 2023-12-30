@@ -1,5 +1,6 @@
 <?php $page = 'change-password'; ?>
 @extends('layout.mainlayout_admin')
+
 @section('content')
     <div class="change-password">
         <div class="change-passwordback">
