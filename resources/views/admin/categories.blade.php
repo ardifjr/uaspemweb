@@ -1,4 +1,5 @@
 <?php $page = 'categories'; ?>
+
 @extends('layout.mainlayout_admin')
 @section('content')
 

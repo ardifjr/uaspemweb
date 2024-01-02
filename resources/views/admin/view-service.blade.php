@@ -1,4 +1,5 @@
 <?php $page = 'view-service'; ?>
+
 @extends('layout.mainlayout_admin')
 @section('content')
     <div class="page-wrapper">
