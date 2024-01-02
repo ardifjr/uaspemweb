@@ -39,6 +39,14 @@ class LandingPageController extends Controller
             })
             ->latest()
             ->paginate(1);
+
+        $news = Content::with(['type', 'user'])
+            ->whereHas('type', function ($query) {
+                $query->where('name', 'berita');
+            })
+            ->latest()
+            ->paginate(1);
+
         $dataProduct = Product::latest()->get();
         $galleries = Gallery::latest()
             ->with('type')
@@ -66,7 +74,8 @@ class LandingPageController extends Controller
             'products' => $dataProduct,
             'galleries' => $galleries,
             'announcements' => $announcements,
-            'linkterkait' => $linkterkait, 
+            'linkterkait' => $linkterkait,
+            'news' => $news, 
             'locations' => $locations
         ]);
     }

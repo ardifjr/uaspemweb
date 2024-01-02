@@ -80,20 +80,34 @@
     <!-- /Pengumuman Section -->
 
     <!-- berita Section -->
-    <section class="useful-blog-section p-3">
+    <section class="app-seven-section px-3 py-7">">
         <div class="container">
-            <div class="section-heading section-heading-four">
-                <div class="row">
-                    <div class="col-md-6 aos" data-aos="fade-up">
-                        <h2>Berita</h2>
-                        <p>nah disini data konten berita</p>
+            <div class="row align-items-center">
+                <h2 class="text-dark">Berita Terbaru</h2>
+                <br><br>
+                @foreach($news as $news)
+                <div class="col-md-5">
+                    <div class="provider-img">
+                        <img src="{{ $news->url_file }}" class="img-fluid rounded-4" alt="{{ $news->title }}" style="width: 100%; height: 100%;">
+                        <!-- <span>{{ $news->category->name }}</span> -->
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <!-- <div class="gcse-search"></div> -->
+                <div class="col-md-7">
+                    <div class="provider-info">
+                        <!-- Judul dan detail berita -->
+                        <h2>{{ $news->title }}</h2>
+                        @if (strlen($news->detail) <= 350)
+                                        {!! $news->detail !!}
+                        @else
+                            {!! substr($news->detail, 0, 400) !!}<span>......</span>
+                            <div class="mb-5">
+                            <a href="{{ route('detail-pengumuman', $news->id) }}"
+                            class="btn btn-primary">Selengkapnya</a>
+                            </div>
+                        @endif
+                    </div>
                 </div>
+                @endforeach
             </div>
         </div>
     </section>
