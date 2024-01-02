@@ -39,7 +39,6 @@ class LandingPageController extends Controller
             })
             ->latest()
             ->paginate(1);
-        
         $dataProduct = Product::latest()->get();
         $galleries = Gallery::latest()
             ->with('type')
