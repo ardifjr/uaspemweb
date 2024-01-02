@@ -91,7 +91,6 @@ Route::middleware('guest')->group(function () {
     Route::get('/data-stanting', function () {
         return view('data-stanting');
     })->name('data-stanting');
-
     Route::get('/galeri', [GalleryController::class, 'indexpage'])->name('galeri.indexpage');
 
     Route::get('/layanan/bppp', [BpppController::class, 'index'])->name('bppp');

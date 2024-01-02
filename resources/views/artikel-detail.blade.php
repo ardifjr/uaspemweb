@@ -15,7 +15,6 @@
             Blog
         @endslot
     @endcomponent
-
     <div class="content">
         <div class="container">
 
