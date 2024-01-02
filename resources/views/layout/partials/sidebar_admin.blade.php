@@ -28,7 +28,7 @@
                     <a class="{{ Request::is('admin/') ? 'active' : '' }}"
                         href="{{ url('admin/') }}"><i class="fe fe-grid "></i> <span>Dashboard</span></a>
                 </li>
-                <!-- <li class="menu-title m-0">
+                <li class="menu-title m-0">
                     <h6>Profile</h6>
                 </li>
                 <li class="submenu">
@@ -84,34 +84,9 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="{{ Request::is('admin/organitations') ? 'active' : '' }}"
-                        href="{{ url('admin/organitations') }}"><i class="fa fa-users"></i> <span>Organitation Structure</span></a>
-                </li>
-                <li>
                     <a class="{{ Request::is('admin/profilepejabatstruktural') ? 'active' : '' }}"
-                    href="{{ url('admin/profilepejabatstruktural') }}"><i class="fas fa-user-tie"></i>   <span>Official Structure Profile</span></a>
+                    href="{{ url('admin/profilepejabatstruktural') }}"><i class="fas fa-user-tie"></i>   <span>Data Dosen</span></a>
                 </li>
-                <li>
-                    <a class="{{ Request::is('admin/tugaspokokdanfungsi') ? 'active' : '' }}"
-                    href="{{ url('admin/tugaspokokdanfungsi') }}"><i class="fas fa-tasks"></i>   <span>Tugas Pokok dan Fungsi</span></a>
-                </li>
-
-                <li class="menu-title">
-                    <h6>PPID</h6>
-                </li>
-                
-                <li>
-                    <a class="{{ Request::is('admin/tentangppid') ? 'active' : '' }}"
-                        href="{{ url('admin/tentangppid') }}"><i class="fa-solid fa-circle-info"></i> <span>Tentang PPID</span></a>
-                </li>
-                <li>
-                    <a class="{{ Request::is('admin/daftarinformasipublik') ? 'active' : '' }}"
-                        href="{{ url('admin/daftarinformasipublik') }}"><i class="fa-regular fa-rectangle-list"></i> <span>Daftar Informasi Publik</span></a>
-                </li>
-                <li>
-                    <a class="{{ Request::is('admin/daftarinformasidikecualikan') ? 'active' : '' }}"
-                        href="{{ url('admin/daftarinformasidikecualikan') }}"><i class="fa-regular fa-rectangle-list"></i> <span>Daftar Informasi Dikecualikan</span></a>
-                </li> -->
                 <li class="menu-title">
                     <h6>Content</h6>
                 </li>
@@ -212,7 +187,7 @@
                         </li>
                     </ul>
                 </li> -->
-                <!-- <li class="submenu">
+                <li class="submenu">
                     <a href="javascript:void(0);">
                         <i class="fe fe-link"></i>
                         <span>Link Terkait</span>
@@ -228,7 +203,7 @@
                             href="{{ url('admin/linkterkait/create') }}"><span>Create</span></a>
                         </li>
                     </ul>
-                </li> -->
+                </li>
                 <!-- <li class="menu-title">
                     <h6>Layanan</h6>
                 </li>
@@ -279,7 +254,7 @@
                     </ul>
                 </li>
 
-                <!-- <li class="menu-title">
+                <li class="menu-title">
                     <h6>Suggestions ( Kritik dan Saran )</h6>
                 </li>
 
@@ -294,7 +269,7 @@
                                 href="{{ url('admin/suggestions') }}">All</a>
                         </li>
                     </ul>
-                </li> -->
+                </li>
 
             </ul>
         </div>

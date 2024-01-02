@@ -39,7 +39,6 @@ class LandingPageController extends Controller
             })
             ->latest()
             ->paginate(1);
-        
         $dataProduct = Product::latest()->get();
         $galleries = Gallery::latest()
             ->with('type')
@@ -113,13 +112,11 @@ class LandingPageController extends Controller
         ]);
     }
     
-
-
     public function agenda()
     {
     $allagendas = Content::with(['type', 'user'])
     ->whereHas('type', function ($query) {
-        $query->where('name', 'agenda');
+        $query->where('name', 'berita');
     })
     ->latest()
     ->filter(request(['search']))
@@ -129,7 +126,7 @@ class LandingPageController extends Controller
      $allagendapagination = Content::latest()
      ->with('type')
      ->whereHas('type', function ($query) {
-         $query->where('name', 'agenda');
+         $query->where('name', 'berita');
      })
      ->take(5)
      ->get();
@@ -137,7 +134,7 @@ class LandingPageController extends Controller
     $categories = DB::table('contents')
         ->join('categories', 'contents.category_id', '=', 'categories.id')
         ->join('types', 'contents.type_id', '=', 'types.id')
-        ->where('types.name', 'agenda')
+        ->where('types.name', 'berita')
         ->select('categories.*')
         ->distinct()
         ->get();
@@ -187,7 +184,7 @@ class LandingPageController extends Controller
     $allagendas = Content::latest()
         ->with('type')
         ->whereHas('type', function ($query) {
-            $query->where('name', 'agenda');
+            $query->where('name', 'berita');
         })
         ->whereHas('category', function ($query) use ($category) {
             $query->where('name', $category);
@@ -198,7 +195,7 @@ class LandingPageController extends Controller
     $categories = DB::table('contents')
         ->join('categories', 'contents.category_id', '=', 'categories.id')
         ->join('types', 'contents.type_id', '=', 'types.id')
-        ->where('types.name', 'agenda')
+        ->where('types.name', 'berita')
         ->select('categories.*')
         ->distinct()
         ->get();

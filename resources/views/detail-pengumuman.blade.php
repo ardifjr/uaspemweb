@@ -16,7 +16,7 @@
                         <div class="p-4">
                             <h2>{{ $announcement->title }}</h2>
                             @if ($announcement->category)
-                                <h6>In {{ $announcement->category->name }} Category</h6>
+                                <h6>{{ $announcement->category->name }}</h6>
                             @endif
                             <p>{!! $announcement->detail !!}</p>
                         </div>

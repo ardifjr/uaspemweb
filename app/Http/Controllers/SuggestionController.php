@@ -15,7 +15,6 @@ class SuggestionController extends Controller
             'data' => $data
         ]);
     }
-
     function destroy($id) 
     {
         $data = Suggestion::find($id);

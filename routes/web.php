@@ -59,7 +59,7 @@ Route::middleware('guest')->group(function () {
     Route::get('/detail_agenda/detail/{id}', [LandingPageController::class, 'detailAgenda'])->name('detail-agenda');
     Route::get('/agenda/{category}', [LandingPageController::class, 'showByAgenda'])->name('agenda.category');
     Route::get('/admin/members', [MemberController::class, 'index']);
-    Route::get('/data-pegawai', [MemberController::class, 'allannouncement']);    
+    Route::get('/data-pegawai', [MemberController::class, 'dataPegawai']);    
     Route::get('/struktur-organisasi', [OrganitationController::class, 'index'])->name('struktur-organisasi');
     Route::get('/error-404', function () { 
         return view('error-404');
@@ -88,11 +88,9 @@ Route::middleware('guest')->group(function () {
     Route::get('/tugas-pokok-fungsi', [TugasPokokdanFungsiController::class, 'index'])->name('tugaspokokdanfungsi');
     Route::get('/daftar-info-kecuali', [DaftarInformasiDikecualikanController::class, 'index'])->name('daftarinformasikecuali');
     Route::get('/profile-pejabat', [ProfilePejabatController::class, 'index'])->name('profile_pejabat');
-
     Route::get('/data-stanting', function () {
         return view('data-stanting');
     })->name('data-stanting');
-
     Route::get('/galeri', [GalleryController::class, 'indexpage'])->name('galeri.indexpage');
 
     Route::get('/layanan/bppp', [BpppController::class, 'index'])->name('bppp');

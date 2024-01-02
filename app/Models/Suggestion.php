@@ -18,7 +18,6 @@ class Suggestion extends Model
         }
 
         // Tambahkan filter lain jika diperlukan
-
         return $query;
     }
 }
