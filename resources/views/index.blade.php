@@ -320,16 +320,15 @@
                 <div class="col-md-12 text-center aos" data-aos="fade-up">
                     <div class="section-heading">
                         <h2>Link Terkait</h2>
-                        <p>ini disini nanti beberapa link terkait itenas</p>
                     </div>
                 </div>
                 <div class="owl-carousel partners-slider aos" data-aos="fade-up">
-                    <!-- @foreach ($linkterkait as $link)
+                    @foreach ($linkterkait as $link)
                         <div class="partner-img">
                             <a href ="{{ $link->detail }}" target="blank"><img src="{{ $link->url_file }}"
                                     alt="img"></a>
                         </div>
-                    @endforeach -->
+                    @endforeach
                 </div>
             </div>
         </div>
