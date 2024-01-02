@@ -1,6 +1,7 @@
 <?php $page = 'contact-messages-view'; ?>
 @extends('layout.mainlayout_admin')
 @section('content')
+
     <div class="page-wrapper page-settings">
         <div class="content">
 
