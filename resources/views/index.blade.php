@@ -43,27 +43,22 @@
     </section>
     <!-- /Tentang itenas -->
 
-
-
     <!-- Pengumuman Section -->
     <section class="app-seven-section px-3 py-5">
         <div class="container">
             <div class="app-sec app-sec-seven p-5">
             <h2 class="text-dark">Pengumuman terbaru</h2>
-            <p class="text-dark">Nanti disiini munculin konten pengumuman</p>
-                <!-- @foreach ($announcements as $announcement) -->
+                @foreach ($announcements as $announcement)
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-6 col-12">
-                            <img src="/assets/img/dppkb/itenas.jpg" class="img-fluid rounded-4" alt="img"
-                                    style="width: 100%; height: 100%;">
-                            <!-- <img src="{{ $announcement->url_file }}" class="img-fluid rounded-4" alt="img"
-                                style="width: 100%; height: 100%;"> -->
+                            <img src="{{ $announcement->url_file }}" class="img-fluid rounded-4" alt="img"
+                                style="width: 100%; height: 100%;">
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="new-app-seven-middle">
                                 <div class="heading aos" data-aos="fade-up">
                                     <h2 class="text-dark">Pengumuman terbaru</h2>
-                                    <!-- <h3>{{ $announcement->title }}</h3>
+                                    <h3>{{ $announcement->title }}</h3>
 
                                     @if (strlen($announcement->detail) <= 350)
                                         {!! $announcement->detail !!}
@@ -73,13 +68,12 @@
                                             <a href="{{ route('detail-pengumuman', $announcement->id) }}"
                                                 class="btn btn-primary">Selengkapnya</a>
                                         </div>
-                                    @endif -->
-
+                                    @endif
                                 </div>
                             </div>
                         </div>
                     </div>
-                <!-- @endforeach -->
+                @endforeach
             </div>
         </div>
     </section>
@@ -112,7 +106,6 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 aos" data-aos="fade-up">
                         <h2 class="">Gallery</h2>
-                        <p>ini nanti data galeri itenas</p>
                     </div>
                     <div class="col-md-6 text-md-end aos" data-aos="fade-up">
                         <a href="{{ url('/galeri') }}" class="btn btn-primary btn-view">LIHAT SEMUA GALERI<i

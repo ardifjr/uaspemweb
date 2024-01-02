@@ -45,6 +45,30 @@ Route::middleware('guest')->group(function () {
     Route::get('/login', function () {
         return view('login');
     })->name('login');
+    Route::get('/index-2', function () {
+        return view('index-2');
+    })->name('index-2');
+    Route::get('/index-3', function () {
+        return view('index-3');
+    })->name('index-3');
+    Route::get('/index-4', function () {
+        return view('index-4');
+    })->name('index-4');
+    Route::get('/index-5', function () {
+        return view('index-5');
+    })->name('index-5');
+    Route::get('/index-6', function () {
+        return view('index-6');
+    })->name('index-6');
+    Route::get('/index-7', function () {
+        return view('index-7');
+    })->name('index-7');
+    Route::get('/index-8', function () {
+        return view('index-8');
+    })->name('index-8');
+    Route::get('/index-9', function () {
+        return view('index-9');
+    })->name('index-9');
     Route::get('/', [LandingPageController::class, 'index'])->name('ladingPage');
     Route::get('/gallery/{id}', [LandingPageController::class, 'show'])->name('gallery.show');
     Route::post('/suggestions', [SuggestionController::class, 'store'])->name('suggestion.store'); 
