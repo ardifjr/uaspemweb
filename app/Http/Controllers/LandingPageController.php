@@ -112,8 +112,6 @@ class LandingPageController extends Controller
         ]);
     }
     
-
-
     public function agenda()
     {
     $allagendas = Content::with(['type', 'user'])

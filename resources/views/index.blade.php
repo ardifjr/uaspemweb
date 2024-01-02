@@ -4,16 +4,12 @@
     <!-- Banner Section -->
     <section class="hero-section-two">
         <div class="banner-slider slider">
-            <div class="banner">
-                    <img class="img-fluid" src="/assets/img/dppkb/samplebanner.png" alt="img"
-                        style="width: 100%; object-fit: cover; height: 706px;">
-                </div>
-            <!-- @foreach ($carousels as $carousel)
+            @foreach ($carousels as $carousel)
                 <div class="banner">
                     <img class="img-fluid" src="{{ $carousel->url_file }}" alt="img"
                         style="width: 100%; object-fit: cover; height: 706px;">
                 </div>
-            @endforeach -->
+            @endforeach
             
         </div>
     </section>
@@ -33,15 +29,10 @@
                 <div class="col-lg-6 col-12 p-3">
                     <div class="passion-eight-all">
                         <div class="section-heading section-heading-eight passion-eight-heading aos" data-aos="fade-up">
-                            <h2>Tentang Kita</h2>
-                            <h2>Judulnya</h2>
-                            <p>
-                                isi konten tentang kitanya
-                            </p>
-                            <!-- <h2>{{ $data->title }}</h2>
+                            <h2>{{ $data->title }}</h2>
                             <p>
                                 {!! $data->detail !!}
-                            </p> -->
+                            </p>
                             <div>
                                 <a href="{{ url('/about-us') }}" class="btn btn-primary btn-view">Profile</a>
                             </div>
