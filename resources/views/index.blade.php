@@ -43,27 +43,22 @@
     </section>
     <!-- /Tentang itenas -->
 
-
-
     <!-- Pengumuman Section -->
     <section class="app-seven-section px-3 py-5">
         <div class="container">
             <div class="app-sec app-sec-seven p-5">
             <h2 class="text-dark">Pengumuman terbaru</h2>
-            <p class="text-dark">Nanti disiini munculin konten pengumuman</p>
-                <!-- @foreach ($announcements as $announcement) -->
+                @foreach ($announcements as $announcement)
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-6 col-12">
-                            <img src="/assets/img/dppkb/itenas.jpg" class="img-fluid rounded-4" alt="img"
-                                    style="width: 100%; height: 100%;">
-                            <!-- <img src="{{ $announcement->url_file }}" class="img-fluid rounded-4" alt="img"
-                                style="width: 100%; height: 100%;"> -->
+                            <img src="{{ $announcement->url_file }}" class="img-fluid rounded-4" alt="img"
+                                style="width: 100%; height: 100%;">
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="new-app-seven-middle">
                                 <div class="heading aos" data-aos="fade-up">
                                     <h2 class="text-dark">Pengumuman terbaru</h2>
-                                    <!-- <h3>{{ $announcement->title }}</h3>
+                                    <h3>{{ $announcement->title }}</h3>
 
                                     @if (strlen($announcement->detail) <= 350)
                                         {!! $announcement->detail !!}
@@ -73,33 +68,46 @@
                                             <a href="{{ route('detail-pengumuman', $announcement->id) }}"
                                                 class="btn btn-primary">Selengkapnya</a>
                                         </div>
-                                    @endif -->
-
+                                    @endif
                                 </div>
                             </div>
                         </div>
                     </div>
-                <!-- @endforeach -->
+                @endforeach
             </div>
         </div>
     </section>
     <!-- /Pengumuman Section -->
 
     <!-- berita Section -->
-    <section class="useful-blog-section p-3">
+    <section class="app-seven-section px-3 py-7">">
         <div class="container">
-            <div class="section-heading section-heading-four">
-                <div class="row">
-                    <div class="col-md-6 aos" data-aos="fade-up">
-                        <h2>Berita</h2>
-                        <p>nah disini data konten berita</p>
+            <div class="row align-items-center">
+                <h2 class="text-dark">Berita Terbaru</h2>
+                <br><br>
+                @foreach($news as $news)
+                <div class="col-md-5">
+                    <div class="provider-img">
+                        <img src="{{ $news->url_file }}" class="img-fluid rounded-4" alt="{{ $news->title }}" style="width: 100%; height: 100%;">
+                        <!-- <span>{{ $news->category->name }}</span> -->
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <!-- <div class="gcse-search"></div> -->
+                <div class="col-md-7">
+                    <div class="provider-info">
+                        <!-- Judul dan detail berita -->
+                        <h2>{{ $news->title }}</h2>
+                        @if (strlen($news->detail) <= 350)
+                                        {!! $news->detail !!}
+                        @else
+                            {!! substr($news->detail, 0, 400) !!}<span>......</span>
+                            <div class="mb-5">
+                            <a href="{{ route('detail-pengumuman', $news->id) }}"
+                            class="btn btn-primary">Selengkapnya</a>
+                            </div>
+                        @endif
+                    </div>
                 </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -112,7 +120,6 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 aos" data-aos="fade-up">
                         <h2 class="">Gallery</h2>
-                        <p>ini nanti data galeri itenas</p>
                     </div>
                     <div class="col-md-6 text-md-end aos" data-aos="fade-up">
                         <a href="{{ url('/galeri') }}" class="btn btn-primary btn-view">LIHAT SEMUA GALERI<i
@@ -241,7 +248,7 @@
             <div class="row">
                 <div class="new-comment">
                     <h4 class="text-center">Kritik & Saran</h4>
-                    <!-- <form action="{{ url('suggestions') }}" method="post"> -->
+                    <form action="{{ url('suggestions') }}" method="post">
                         @method('post') @csrf
                         <div class="row">
                             <div class="col-md-6">
@@ -313,16 +320,15 @@
                 <div class="col-md-12 text-center aos" data-aos="fade-up">
                     <div class="section-heading">
                         <h2>Link Terkait</h2>
-                        <p>ini disini nanti beberapa link terkait itenas</p>
                     </div>
                 </div>
                 <div class="owl-carousel partners-slider aos" data-aos="fade-up">
-                    <!-- @foreach ($linkterkait as $link)
+                    @foreach ($linkterkait as $link)
                         <div class="partner-img">
                             <a href ="{{ $link->detail }}" target="blank"><img src="{{ $link->url_file }}"
                                     alt="img"></a>
                         </div>
-                    @endforeach -->
+                    @endforeach
                 </div>
             </div>
         </div>
