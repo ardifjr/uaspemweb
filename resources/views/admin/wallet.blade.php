@@ -1,4 +1,5 @@
 <?php $page = 'wallet'; ?>
+
 @extends('layout.mainlayout_admin')
 @section('content')
     <div class="page-wrapper page-settings">
