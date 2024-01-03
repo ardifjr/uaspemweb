@@ -67,8 +67,7 @@
                                     <div class="home-usercontents">
                                         <div class="home-usercontentcount">
                                             <img src="{{ URL::asset('/admin_assets/img/icons/arrow-up.svg') }}" alt="img" class="me-2">
-                                            <!-- <span class="counters" data-count="{{ $listVillagesCount }}">{{ $listVillagesCount }}</span> -->
-                                            <span class="counters" data-count="10">10</span>
+                                            <span class="counters" data-count="{{ $listVillagesCount }}">{{ $listVillagesCount }}</span>
                                         </div>
                                         <h5> Jumlah Data</h5>
                                     </div>
@@ -147,8 +146,7 @@
                                         <div class="home-usercontentcount">
                                             <img src="{{ URL::asset('/admin_assets/img/icons/arrow-up.svg') }}"
                                                 alt="img" class="me-2">
-                                                <!-- <span class="counters" data-count="{{ $productcount }}">{{ $productcount }}</span> -->
-                                                <span class="counters" data-count="10">10</span>
+                                                <span class="counters" data-count="{{ $productcount }}">{{ $productcount }}</span>
                                         </div>
                                         <h5> Jumlah Data</h5>
                                     </div>

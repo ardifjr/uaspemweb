@@ -85,7 +85,7 @@
                 </li>
                 <li>
                     <a class="{{ Request::is('admin/profilepejabatstruktural') ? 'active' : '' }}"
-                    href="{{ url('admin/profilepejabatstruktural') }}"><i class="fas fa-user-tie"></i>   <span>Data Dosen</span></a>
+                    href="{{ url('admin/profilepejabatstruktural') }}"><i class="fas fa-user-tie"></i>   <span>Staff Pengajar</span></a>
                 </li>
                 <li class="menu-title">
                     <h6>Content</h6>

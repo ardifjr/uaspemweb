@@ -52,7 +52,7 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <label>Category*</label>
+                                    <label>Jabatan*</label>
                                     <select class="form-control" name="category_id">
                                         @foreach ($categories as $category)
                                             <option value="{{ $category->id }}">{{ $category->name }}</option>
