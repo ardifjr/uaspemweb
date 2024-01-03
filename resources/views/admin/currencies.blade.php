@@ -1,6 +1,7 @@
 <?php $page = 'currencies'; ?>
 @extends('layout.mainlayout_admin')
 @section('content')
+
     <div class="page-wrapper ">
         <div class="content w-100 ps-0 pt-0">
 
