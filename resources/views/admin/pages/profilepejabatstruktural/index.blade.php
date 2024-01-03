@@ -6,7 +6,7 @@
 
             <div class="row mb-4 justify-content-between align-items-center">
                 <div class="col-auto">
-                    <h5>Profile Pejabat Struktural</h5>
+                    <h5>Staff Pengajar</h5>
                 </div>
                 <div class="col-auto d-flex gap-4">
                     <div class="page-headers">
@@ -22,7 +22,7 @@
                             </div>
                         </form>
                     </div>
-                    <a class="btn btn-primary" href="{{ url('admin/profilepejabatstruktural/create') }}"><i class="fa fa-plus me-2"></i>Add Profile</a>
+                    <a class="btn btn-primary" href="{{ url('admin/profilepejabatstruktural/create') }}"><i class="fa fa-plus me-2"></i>Add Staff Pengajar</a>
                 </div>
             </div>
             <div class="row">
@@ -32,10 +32,10 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>File</th>
+                                    <th>Foto</th>
                                     <th>Name</th>
                                     <th>Detail</th>
-                                    <th>Category</th>
+                                    <th>Jabatan</th>
                                     <th>Create By</th>
                                     <th>Created At</th>
                                     <th>Action</th>

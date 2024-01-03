@@ -143,7 +143,6 @@ Route::middleware('auth')->group(function () {
 
         Route::get('/bkbkkk', [BkbkkkController::class, 'bkbkkkAdmin'])->name('bkbkkk_admin');
         Route::put('/bkbkkk/{id}', [BkbkkkController::class, 'update'])->name('bkbkkk_update_admin');
-
         Route::get('/profile', [ProfileController::class, 'profileAdmin'])->name('profile_admin');
         Route::put('/profile/{id}', [ProfileController::class, 'update'])->name('profile_update_admin');
         Route::get('/tentangppid', [TentangPPIDController::class, 'tentangppidAdmin'])->name('tentang_ppid');

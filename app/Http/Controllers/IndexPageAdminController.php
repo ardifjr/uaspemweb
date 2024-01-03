@@ -14,10 +14,16 @@ class IndexPageAdminController extends Controller
 {
     public function indexAdminPage()
     {
-        $listVillagesCount = ListVillage::count();
+        $listVillagesCount = Content::whereHas('type', function ($query) {
+            $query->where('name', 'Artikel');
+        })->count();
         $galleryCount = Gallery::count();
-        $productcount = Product::count();
-        $memberCount = Member::count();
+        $productcount = Content::whereHas('type', function ($query) {
+            $query->where('name', 'berita');
+        })->count();
+        $memberCount = Content::whereHas('type', function ($query) {
+            $query->where('name', 'Profile Pejabat Struktural');
+        })->count();
         $pengumumanContent = Content::latest()->with(['type'])
             ->whereHas('type', function ($query) {
                 $query->where('name', 'pengumuman');

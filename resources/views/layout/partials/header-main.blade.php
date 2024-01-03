@@ -45,7 +45,7 @@
                                 <li><a href="{{ url('/about-us') }}">Profile, Visi & Misi</a></li>
                                 <!-- <li><a href="{{ url('/struktur-organisasi') }}">Struktur Organisasi</a></li>
                                 <li><a href="{{ url('/tugas-pokok-fungsi') }}">Tugas Pokok dan Fungsi</a></li> -->
-                                <li><a href="{{ url('/profile-pejabat') }}">Data Dosen</a></li>
+                                <li><a href="{{ url('/profile-pejabat') }}">Staff Pengajar</a></li>
                                 <li><a href="{{ url('/data-pegawai') }}">Program Studi</a></li>
                             </ul>
                         </li>

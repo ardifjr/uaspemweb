@@ -2,13 +2,13 @@
 @section('content')
     @component('components.breadcrumb')
         @slot('title')
-            Profile Dosen
+            Staff Pengajar
         @endslot
         @slot('li_1')
             Profile
         @endslot
         @slot('li_2')
-            Profile Dosen
+            Staff Pengajar
         @endslot
     @endcomponent
 
