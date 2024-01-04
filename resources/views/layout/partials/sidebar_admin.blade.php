@@ -238,8 +238,8 @@
                     </ul>
                 </li>
                 <li class="submenu">
-                    <a href="javascript:void(0);"><i class="fe fe-users"></i>
-                        <span>Members</span>
+                    <a href="javascript:void(0);"><i class="fe fe-book"></i>
+                        <span>Data Progam Studi</span>
                         <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
                     </a>
                     <ul>

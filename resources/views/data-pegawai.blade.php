@@ -40,13 +40,13 @@
                         </div>
                         <div class="row pegawai-desc justify-content-md-start">
                             <div class="col-auto pegawai-desc-title">
-                                Email 
+                            {{$pegawai->email}}
                             </div>
-                            <div class="col-auto">
+                            <!-- <div class="col-auto">
                                 : {{$pegawai->email}}
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="row pegawai-desc justify-content-md-start">
+                        <!-- <div class="row pegawai-desc justify-content-md-start">
                             <div class="col-auto pegawai-desc-title">
                                 Position 
                             </div>
@@ -69,7 +69,7 @@
                             <div class="col-auto ">
                              : {{$pegawai->nip}}
                             </div>
-                        </div>
+                        </div> -->
                         </div>
                     </div>
                 </div>
