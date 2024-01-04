@@ -6,7 +6,7 @@
 
             <div class="row mb-4 justify-content-between align-items-center">
                 <div class="col-auto">
-                    <h5>Members</h5>
+                    <h5>Data Progam Studi</h5>
                 </div>
                 <div class="col-auto d-flex gap-4">
                     <div class="page-headers">
@@ -23,7 +23,7 @@
                         </form>
                     </div>
                     <a class="btn btn-primary" href="{{ url('admin/members/create') }}"><i class="fa fa-plus me-2"></i>Add
-                        Member</a>
+                    Data Progam Studi</a>
                 </div>
             </div>
             <div class="row">
@@ -34,11 +34,8 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Photo</th>
-                                    <th>Full Name</th>
-                                    <th>Email</th>
-                                    <th>Position</th>
-                                    <th>Periode</th>
-                                    <th>Nip</th>
+                                    <th>Nama Jurusuan</th>
+                                    <th>Detail</th>
                                     <th>Create By</th>
                                     <th>Created At</th>
                                     <th>Action</th>
@@ -53,9 +50,6 @@
                                         </td>
                                         <td>{{ $item->full_name }}</td>
                                         <td>{{ $item->email }}</td>
-                                        <td>{{ $item->position }}</td>
-                                        <td>{{ $item->periode }}</td>
-                                        <td>{{ $item->nip }}</td>
                                         <td>{{ $item->user->full_name }}</td>
                                         <td>
                                             {{ $item->created_at }}

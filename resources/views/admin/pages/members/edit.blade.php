@@ -10,29 +10,29 @@
 
                         @component('admin.components.addpageheader')
                             @slot('addtitle')
-                                Edit members
+                                Edi Progam Studi
                             @endslot
                         @endcomponent
 
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <label>Full Name*</label>
+                                    <label>Name Progam Studi*</label>
                                     <input value="{{ $data->full_name }}" type="text" class="form-control" name="full_name" placeholder="Enter Your Full Name ">
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <label>Email*</label>
+                                    <label>Detail*</label>
                                     <input value="{{ $data->email }}" type="text" class="form-control" name="email" placeholder="Enter Email">
                                 </div>
                             </div>
-                            <div class="col-lg-12">
+                            <!-- <div class="col-lg-12">
                                 <div class="form-group">
                                     <label>Position*</label>
                                     <input value="{{ $data->position }}" type="text" class="form-control" name="position" placeholder="Enter Position">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label>Photo*</label>
@@ -45,7 +45,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-lg-12">
+                            <!-- <div class="col-lg-12">
                                 <div class="form-group">
                                     <label>Periode*</label>
                                     <input value="{{ $data->periode }}" type="text" class="form-control" name="periode" placeholder="Enter Periode">
@@ -56,7 +56,7 @@
                                     <label>NIP*</label>
                                     <input value="{{ $data->nip }}" type="text" class="form-control" name="nip" placeholder="Enter Nip">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-lg-12">
                                 <div class="btn-path">
                                     <a href="{{ url('admin/categories') }}" class="btn btn-cancel me-3">Cancel</a>

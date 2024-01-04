@@ -33,15 +33,11 @@ class MemberController extends Controller
     {
     $validatedData = $request->validate([
         'full_name' => 'required|max:255',
-        'email' => 'required|max:255',
-        'position' => 'required|max:255',
-        'periode' => 'required|max:255',
-        'nip' => 'required|max:255',
+        'email' => 'required',
         'filegallery' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
     ]);
 
     $validatedData['photo'] = $this->FirebaseMethods->upload($request->file('filegallery'));
-    $validatedData['periode'] = $request->input('periode');
     $validatedData['user_id'] = auth()->user()->id;
 
     Member::create($validatedData);
@@ -75,9 +71,6 @@ class MemberController extends Controller
         $validatedData = $request->validate([
             'full_name' => 'required|max:255',
             'email' => 'required|max:255',
-            'position' => 'required|max:255',
-            'periode' => 'required|max:255',
-            'nip' => 'required|max:255',
             'filegallery' => 'image|mimes:jpeg,png,jpg,gif,svg',
         ]);
 
@@ -97,9 +90,6 @@ class MemberController extends Controller
     $search = $request->input('search');
     $dataPegawai = Member::where('full_name', 'like', '%' . $search . '%')
         ->orWhere('email', 'like', '%' . $search . '%')
-        ->orWhere('position', 'like', '%' . $search . '%')
-        ->orWhere('periode', 'like', '%' . $search . '%')
-        ->orWhere('nip', 'like', '%' . $search . '%')
         ->paginate(5);
 
     return view('data-pegawai', compact('dataPegawai'));

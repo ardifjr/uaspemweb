@@ -12,7 +12,7 @@
                                     <div class="home-usercount">
                                         <span><img src="{{ URL::asset('/admin_assets/img/icons/user.svg') }}"
                                                 alt="img"></span>
-                                        <h6>Data Dosen</h6>
+                                        <h6>Staff Pengajar</h6>
                                     </div>
                                     <div class="home-useraction">
                                         <a class="delete-table bg-white" href="javascript:void(0);"
@@ -21,7 +21,7 @@
                                         </a>
                                         <ul class="dropdown-menu" data-popper-placement="bottom-end">
                                             <li>
-                                                <a href="{{ url('admin/members') }}" class="dropdown-item"> View</a>
+                                                <a href="{{ url('admin/profilepejabatstruktural') }}" class="dropdown-item"> View</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -58,7 +58,7 @@
                                         </a>
                                         <ul class="dropdown-menu" data-popper-placement="bottom-end">
                                             <li>
-                                                <a href="{{ url('admin/list-villages') }}" class="dropdown-item"> View</a>
+                                                <a href="{{ url('admin/contents') }}" class="dropdown-item"> View</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -136,7 +136,7 @@
                                         </a>
                                         <ul class="dropdown-menu" data-popper-placement="bottom-end">
                                             <li>
-                                                <a href="{{ url('admin/products') }}" class="dropdown-item"> View</a>
+                                                <a href="{{ url('admin/contents') }}" class="dropdown-item"> View</a>
                                             </li>
                                         </ul>
                                     </div>
